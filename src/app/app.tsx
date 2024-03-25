@@ -1,14 +1,14 @@
 import {FC} from "react";
 
 import './assets/styles/normalize.scss';
-import { AppContainer } from './resources/styles.ts';
+import {AppContainer, GlobalStyles} from './resources/styles.ts';
+import Banner from "../components/banner";
 
 const App: FC = () => {
   return (
     <AppContainer>
-      <span>
-        Hello World!
-      </span>
+      <GlobalStyles/>
+      <Banner/>
     </AppContainer>
   )
 }
