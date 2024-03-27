@@ -1,19 +1,16 @@
-import {FC, MouseEventHandler, useRef, useState} from "react";
+import {FC, MouseEventHandler, useRef} from "react";
 import {StyledBannerWrap} from "./resources/styles.ts";
 
+import './resources/styles.scss';
+import useCreateStar from "./utils/use-create-star";
+
 const Banner: FC = () => {
-  const bannerRef = useRef<HTMLDivElement | null>(null);
+  const bannerRef = useRef<HTMLDivElement>(null);
 
-  const [particles, setParticles] = useState<any[]>([]);
-
+  const createStar = useCreateStar();
   const handleMouseMove: MouseEventHandler = (e) => {
-    setParticles(state => [...state, {
-      x: e.nativeEvent.offsetX,
-      y: e.nativeEvent.offsetY,
-    }])
+    createStar(e, bannerRef);
   }
-
-  console.log(particles)
 
   return (
     <StyledBannerWrap ref={bannerRef} id={'profile-banner'} onMouseMove={handleMouseMove}></StyledBannerWrap>
