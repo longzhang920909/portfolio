@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import palette from "../../../shared/palette";
+import palette from "../../../shared/theme";
 
 export const StyledBannerWrap = styled('div')(() => ({
   background: `linear-gradient(180deg, ${palette.primary.extraDark}, transparent)`,

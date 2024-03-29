@@ -1,5 +1,5 @@
 import styled, {createGlobalStyle} from "styled-components";
-import palette from "../../shared/palette";
+import theme from "../../shared/theme";
 
 export const AppContainer = styled('div')(() => ({
   maxWidth: '768px',
@@ -8,7 +8,7 @@ export const AppContainer = styled('div')(() => ({
 
 export const GlobalStyles = createGlobalStyle({
   body: {
-    background: palette.background.main
+    background: theme.palette.background.main
   },
   '#root': {
     padding: '30px 0 50px'
