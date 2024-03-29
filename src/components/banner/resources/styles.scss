@@ -1,7 +1,15 @@
-.particle {
+.particle, .glow {
   position: absolute;
   pointer-events: none;
 }
+
+.glow {
+  width: 1px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 20px 10px rgba(222, 91, 255, 0.1);
+}
+
 
 @keyframes fall-1 {
   0% {
@@ -56,5 +64,23 @@
             rotateY(-180deg)
             rotateZ(360deg);
     opacity: 0;
+  }
+}
+
+@keyframes shine-1 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes shine-2 {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: .4
   }
 }

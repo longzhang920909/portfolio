@@ -1,4 +1,4 @@
-import {MutableRefObject} from "react";
+import {MutableRefObject, MouseEvent as ReactMouseEvent} from "react";
 import makeStarSvg from "../make-star-svg";
 
 const useCreateStar = () => {
@@ -6,9 +6,9 @@ const useCreateStar = () => {
   let prevY = 0;
 
   const colors = ['#AC75FF', '#FF67D5', '#FF9F74', '#F9F871'];
-  const fallAnimations = ['fall-1', 'fall-2', 'fall-3', 'fall-2'];
+  const fallAnimations = ['fall-1', 'fall-2', 'fall-3'];
 
-  return (e: React.MouseEvent, parentRef: MutableRefObject<HTMLDivElement | null>) => {
+  return (e: ReactMouseEvent, parentRef: MutableRefObject<HTMLDivElement | null>) => {
     const currX = e.nativeEvent.offsetX;
     const currY = e.nativeEvent.offsetY;
 
