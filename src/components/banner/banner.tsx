@@ -54,8 +54,8 @@ const Banner: FC = () => {
 
   return (
     <StyledBannerWrap ref={bannerRef} id={'profile-banner'} onMouseMove={handleMouseMove}>
-      {dots.map(dot => (
-        <StyledDot style={dot.style}><span></span></StyledDot>
+      {dots.map((dot, i) => (
+        <StyledDot key={i} style={dot.style}><span></span></StyledDot>
       ))}
     </StyledBannerWrap>
   )
