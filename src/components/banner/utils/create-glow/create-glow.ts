@@ -1,6 +1,9 @@
-import {MouseEvent as ReactMouseEvent, MutableRefObject} from "react";
+import { MouseEvent as ReactMouseEvent, MutableRefObject } from 'react';
 
-const createGlow = (e: ReactMouseEvent, parentRef: MutableRefObject<HTMLDivElement | null>) => {
+const createGlow = (
+  e: ReactMouseEvent,
+  parentRef: MutableRefObject<HTMLDivElement | null>,
+) => {
   const glow = document.createElement('div');
   glow.className = 'glow';
   glow.style.top = e.nativeEvent.offsetY + 'px';
@@ -15,6 +18,6 @@ const createGlow = (e: ReactMouseEvent, parentRef: MutableRefObject<HTMLDivEleme
       parentRef.current.removeChild(glow);
     }
   }, 100);
-}
+};
 
-export default createGlow
+export default createGlow;
