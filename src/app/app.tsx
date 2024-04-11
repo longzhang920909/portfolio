@@ -1,7 +1,7 @@
 import {FC} from "react";
 
-import './assets/styles/normalize.scss';
-import {AppContainer, GlobalStyles} from './resources/styles.ts';
+import './assets/scss/normalize.scss';
+import {AppContainer, GlobalStyles} from './assets/styles.ts';
 import {ThemeProvider} from "styled-components";
 import theme from "../shared/theme";
 import Profile from "../components/profile";

@@ -1,7 +1,7 @@
 import {CSSProperties, FC, MouseEventHandler, useEffect, useRef, useState} from "react";
-import {StyledBannerWrap, StyledDot} from "./resources/styles.ts";
+import {StyledBannerWrap, StyledDot} from "./assets/banner.styles.ts";
 
-import './resources/styles.scss';
+import './assets/styles.scss';
 import useCreateStar from "./utils/use-create-star";
 import createGlow from "./utils/create-glow";
 
