@@ -1,14 +1,21 @@
-import {CSSProperties, FC, MouseEventHandler, useEffect, useRef, useState} from "react";
-import {StyledBannerWrap, StyledDot} from "./assets/banner.styles.ts";
+import {
+  CSSProperties,
+  FC,
+  MouseEventHandler,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
+import { StyledBannerWrap, StyledDot } from './assets/banner.styles.ts';
 
 import './assets/styles.scss';
-import useCreateStar from "./utils/use-create-star";
-import createGlow from "./utils/create-glow";
+import useCreateStar from './utils/use-create-star';
+import createGlow from './utils/create-glow';
 
 const Banner: FC = () => {
   const bannerRef = useRef<HTMLDivElement>(null);
 
-  const [dots, setDots] = useState<{style: CSSProperties}[]>([]);
+  const [dots, setDots] = useState<{ style: CSSProperties }[]>([]);
 
   const shineAnimations = ['shine-1', 'shine-2'];
 
@@ -25,10 +32,10 @@ const Banner: FC = () => {
       for (let i = 0; i <= randomNumber; i++) {
         const randomX = Math.floor(Math.random() * width);
         const randomY = Math.floor(Math.random() * height);
-        const randomSize = Math.floor((Math.random() * 3)) + 1;
+        const randomSize = Math.floor(Math.random() * 3) + 1;
 
         const randomDelay = Math.floor(Math.random() * 10);
-        const randomAnimation = shineAnimations[Math.floor(Math.random() * 2)]
+        const randomAnimation = shineAnimations[Math.floor(Math.random() * 2)];
 
         dots[i] = {
           style: {
@@ -36,29 +43,34 @@ const Banner: FC = () => {
             height: randomSize,
             top: randomY,
             left: randomX,
-            animation: `${randomAnimation} 1.5s ease ${randomDelay}s infinite alternate`
-          }
-        }
+            animation: `${randomAnimation} 1.5s ease ${randomDelay}s infinite alternate`,
+          },
+        };
       }
 
       setDots(dots);
     }
-
-  }, [])
+  }, []);
 
   const createStar = useCreateStar();
   const handleMouseMove: MouseEventHandler = (e) => {
     createStar(e, bannerRef);
     createGlow(e, bannerRef);
-  }
+  };
 
   return (
-    <StyledBannerWrap ref={bannerRef} id={'profile-banner'} onMouseMove={handleMouseMove}>
+    <StyledBannerWrap
+      ref={bannerRef}
+      id={'profile-banner'}
+      onMouseMove={handleMouseMove}
+    >
       {dots.map((dot, i) => (
-        <StyledDot key={i} style={dot.style}><span></span></StyledDot>
+        <StyledDot key={i} style={dot.style}>
+          <span></span>
+        </StyledDot>
       ))}
     </StyledBannerWrap>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;
