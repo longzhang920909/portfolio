@@ -1,20 +1,21 @@
-import {FC} from "react";
+import { FC } from 'react';
 
 import './assets/scss/normalize.scss';
-import {AppContainer, GlobalStyles} from './assets/styles.ts';
-import {ThemeProvider} from "styled-components";
-import theme from "../shared/theme";
-import Profile from "../components/profile";
+import './assets/scss/global.scss';
+import { ThemeProvider } from 'styled-components';
+import Profile from '../components/profile';
+import theme from '../shared/theme';
+import { AppContainer, GlobalStyles } from './assets/styles.ts';
 
 const App: FC = () => {
   return (
     <AppContainer>
-      <GlobalStyles/>
+      <GlobalStyles />
       <ThemeProvider theme={theme}>
-        <Profile/>
+        <Profile />
       </ThemeProvider>
     </AppContainer>
-  )
-}
+  );
+};
 
-export default App
+export default App;

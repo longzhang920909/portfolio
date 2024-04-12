@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const pfpSize = 160;
 
-export const StyledProfilePicture = styled('div')(({theme}) => ({
+export const StyledProfilePicture = styled('div')(({ theme }) => ({
   width: pfpSize,
   height: pfpSize,
   marginTop: (pfpSize - pfpSize / 2) * -1,
@@ -14,12 +14,12 @@ export const StyledProfilePicture = styled('div')(({theme}) => ({
   borderColor: theme.palette.background.main,
   '&:hover': {
     img: {
-      transform: 'scale(1.2)'
-    }
+      transform: 'scale(1.1)',
+    },
   },
   '& img': {
     width: '100%',
     height: '100%',
-    transition: 'all .3s'
-  }
-}))
+    transition: 'all .3s',
+  },
+}));
