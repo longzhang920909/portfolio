@@ -1,9 +1,9 @@
-import palette from "./palette";
-import text from "./text.ts";
+import palette from './palette';
+import text from './text.ts';
 
 const theme = {
   palette,
-  text
-}
+  text,
+};
 
-export default theme
+export default theme;
