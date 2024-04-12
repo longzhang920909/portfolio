@@ -6,9 +6,9 @@ import {
   useRef,
   useState,
 } from 'react';
-import { StyledBannerWrap, StyledDot } from './assets/banner.styles.ts';
 
 import './assets/styles.scss';
+import { StyledBannerWrap, StyledDot } from './assets/banner.styles';
 import useCreateStar from './utils/use-create-star';
 import createGlow from './utils/create-glow';
 
