@@ -19,7 +19,7 @@ const Profile: FC = () => {
         <Text as={'h2'} variant={'h3'}>
           Web developer
         </Text>
-        <Text>
+        <Text style={{ marginTop: '10px' }}>
           <p>Passionate about clean code and delightful user experiences ✨</p>
           <p>
             Front-end developer. Back-end explorer. UX/UI enthusiast. Creative
