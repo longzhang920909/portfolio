@@ -13,6 +13,7 @@ const Text: FC<TTextProps> = ({
     ...theme.text.variants[variant],
     color: theme.palette.text.primary,
     fontFamily: theme.text.fontFamily,
+    lineHeight: theme.text.lineHeight,
     ...style,
   };
 

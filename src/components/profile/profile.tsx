@@ -16,6 +16,16 @@ const Profile: FC = () => {
         <Text variant={'h2'} as={'h1'} style={{ marginTop: '20px' }}>
           Emilia N
         </Text>
+        <Text as={'h2'} variant={'h3'}>
+          Web developer
+        </Text>
+        <Text>
+          <p>Passionate about clean code and delightful user experiences ✨</p>
+          <p>
+            Front-end developer. Back-end explorer. UX/UI enthusiast. Creative
+            coder. Content creator.
+          </p>
+        </Text>
       </Container>
     </div>
   );
