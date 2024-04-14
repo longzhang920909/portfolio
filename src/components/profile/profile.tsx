@@ -13,7 +13,7 @@ const Profile: FC = () => {
         <StyledProfilePicture>
           <img src={image} alt="Photo of Emilia" />
         </StyledProfilePicture>
-        <Text variant={'h2'} style={{ marginTop: '20px' }}>
+        <Text variant={'h2'} as={'h1'} style={{ marginTop: '20px' }}>
           Emilia N
         </Text>
       </Container>
