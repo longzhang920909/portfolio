@@ -8,4 +8,5 @@ export interface TTextProps {
   variant?: TTextVariants;
   children: ReactNode;
   style?: CSSObject;
+  as?: keyof HTMLElementTagNameMap;
 }
