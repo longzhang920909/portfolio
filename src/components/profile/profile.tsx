@@ -4,6 +4,9 @@ import Text from '../../ui/text';
 import Banner from '../banner';
 import image from './assets/img/photo.png';
 import { StyledProfilePicture } from './assets/profile.styles';
+import Box from '../../ui/box/box.tsx';
+import IconLink from '../../ui/icon-link';
+import { SuitcaseIcon } from '../../ui/icons';
 
 const Profile: FC = () => {
   return (
@@ -26,6 +29,17 @@ const Profile: FC = () => {
             coder. Content creator.
           </p>
         </Text>
+        <Box
+          sx={() => ({
+            display: 'flex',
+          })}
+        >
+          <IconLink
+            icon={<SuitcaseIcon />}
+            label={'Available'}
+            href={'javascript:void'}
+          />
+        </Box>
       </Container>
     </div>
   );
