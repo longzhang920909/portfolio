@@ -1,33 +1,27 @@
 import { FC, forwardRef, MouseEvent, ReactNode } from 'react';
 import { StyledTabButton } from './assets/tab-button.styles';
+import { TTab } from '../tabs/assets/tabs.types.ts';
 
 const TabButton: FC<{
   children: ReactNode;
   isActive?: boolean;
   handleClick?: (e: MouseEvent) => void;
-}> = forwardRef(
-  (
-    {
-      children,
-      handleClick,
-      // isActive,
-    },
-    ref,
-  ) => {
-    return (
-      <StyledTabButton
-        ref={ref}
-        className={'tabs-button'}
-        onClick={(e) => {
-          handleClick && handleClick(e);
-        }}
-        sx={() => ({})}
-      >
-        {children}
-      </StyledTabButton>
-    );
-  },
-);
+  value: TTab['value'];
+}> = forwardRef(({ children, handleClick, value }, ref) => {
+  return (
+    <StyledTabButton
+      ref={ref}
+      className={`tabs-button tabs-button-${value}`}
+      id={`${value}`}
+      onClick={(e) => {
+        handleClick && handleClick(e);
+      }}
+      sx={() => ({})}
+    >
+      {children}
+    </StyledTabButton>
+  );
+});
 
 export default TabButton;
 

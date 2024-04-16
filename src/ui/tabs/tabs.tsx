@@ -14,17 +14,10 @@ const StyledIndicator = styled(Box)(({ theme }) => ({
   transition: 'all .3s',
 }));
 
-const Tabs: FC<TTabsProps> = ({ sx }) => {
+const Tabs: FC<TTabsProps> = ({ sx, tabs, getValue, currentValue }) => {
   const [position, setPosition] = useState({ width: 0, left: 0 });
 
   const ref = useRef<HTMLDivElement>();
-
-  const tabs = [
-    { label: 'About' },
-    { label: 'Skills' },
-    { label: 'Projects' },
-    { label: 'Contact' },
-  ];
 
   const setIndicatorPosition = (target: HTMLDivElement | null) => {
     if (target) {
@@ -43,16 +36,24 @@ const Tabs: FC<TTabsProps> = ({ sx }) => {
 
   useEffect(() => {
     if (ref.current) {
-      const firstTab: HTMLDivElement | null =
-        ref.current.querySelector('.tabs-button');
-      setIndicatorPosition(firstTab);
+      const current: HTMLDivElement | null = ref.current.querySelector(
+        '.tabs-button' + (currentValue ? `#${currentValue}` : ''),
+      );
+      setIndicatorPosition(current);
     }
-  }, []);
+  }, [currentValue]);
 
   return (
     <StyledTabsWrap ref={ref} sx={sx}>
       {tabs.map((tab) => (
-        <TabButton key={tab.label} handleClick={handleClick}>
+        <TabButton
+          key={tab.value}
+          value={tab.value}
+          handleClick={(e) => {
+            handleClick(e);
+            getValue && getValue(tab);
+          }}
+        >
           <Text>{tab.label}</Text>
         </TabButton>
       ))}

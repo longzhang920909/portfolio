@@ -55,7 +55,16 @@ const Profile: FC = () => {
             href={'javascript:void'}
           />
         </Box>
-        <Tabs sx={() => ({ marginTop: '40px' })} />
+        <Tabs
+          getValue={(value) => console.log(value)}
+          tabs={[
+            { label: 'About', value: 'about' },
+            { label: 'Skills', value: 'skills' },
+            { label: 'Projects', value: 'projects' },
+            { label: 'Contact', value: 'contact' },
+          ]}
+          sx={() => ({ marginTop: '40px' })}
+        />
       </Container>
     </div>
   );
