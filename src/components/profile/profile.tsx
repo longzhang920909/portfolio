@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import Container from '../../ui/container/container';
 import Text from '../../ui/text';
 import Banner from '../banner';
@@ -11,6 +11,10 @@ import InstagramIcon from '../../ui/icons/instagram-icon.tsx';
 import Tabs from '../../ui/tabs';
 
 const Profile: FC = () => {
+  const [currentTab, setCurrentTab] = useState('about');
+
+  console.log(currentTab);
+
   return (
     <div>
       <Banner />
@@ -56,7 +60,8 @@ const Profile: FC = () => {
           />
         </Box>
         <Tabs
-          getValue={(value) => console.log(value)}
+          currentValue={currentTab}
+          getValue={(tab) => setCurrentTab(tab.value as string)}
           tabs={[
             { label: 'About', value: 'about' },
             { label: 'Skills', value: 'skills' },
