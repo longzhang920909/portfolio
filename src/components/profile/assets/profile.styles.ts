@@ -12,6 +12,7 @@ export const StyledProfilePicture = styled('div')(({ theme }) => ({
   zIndex: 10,
   border: '6px solid',
   borderColor: theme.palette.background.main,
+  background: '#ccc',
   '&:hover': {
     img: {
       transform: 'scale(1.1)',

@@ -11,7 +11,7 @@ const Text: FC<TTextProps> = ({
   const theme = useTheme();
   const styleObj = {
     ...theme.text.variants[variant],
-    color: theme.palette.text.primary,
+    color: 'inherit', // theme.palette.text.primary
     ...style,
   };
 
