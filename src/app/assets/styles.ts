@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle({
   html: {
     fontFamily: theme.text.fontFamily,
     lineHeight: theme.text.lineHeight,
+    color: theme.palette.text.primary,
   },
   '*': {
     margin: 0,

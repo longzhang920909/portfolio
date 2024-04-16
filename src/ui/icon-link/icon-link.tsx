@@ -12,15 +12,14 @@ const IconLink: FC<{
     <Box
       as={'a'}
       href={href}
-      sx={(theme) => {
-        return {
-          display: 'flex',
-          alignItems: 'center',
-          gap: '.5em',
-          textDecoration: 'none',
-          color: theme.palette.text.primary,
-        };
-      }}
+      sx={(theme) => ({
+        display: 'flex',
+        alignItems: 'center',
+        gap: '.5em',
+        textDecoration: 'none',
+        color: theme.palette.text.secondary,
+        lineHeight: 1,
+      })}
     >
       <Box as={'span'} sx={() => ({ width: 20, height: 20 })}>
         {icon}
