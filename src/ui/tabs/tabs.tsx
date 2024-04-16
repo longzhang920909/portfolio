@@ -1,4 +1,4 @@
-import { FC, MouseEvent, useState } from 'react';
+import { FC, MouseEvent, useEffect, useRef, useState } from 'react';
 import { StyledTabsWrap } from './assets/tabs.styles';
 import Text from '../text';
 import { TTabsProps } from './assets/tabs.types.ts';
@@ -17,7 +17,7 @@ const StyledIndicator = styled(Box)(({ theme }) => ({
 const Tabs: FC<TTabsProps> = ({ sx }) => {
   const [position, setPosition] = useState({ width: 0, left: 0 });
 
-  // const ref = useRef();
+  const ref = useRef<HTMLDivElement>();
 
   const tabs = [
     { label: 'About' },
@@ -26,17 +26,31 @@ const Tabs: FC<TTabsProps> = ({ sx }) => {
     { label: 'Contact' },
   ];
 
-  const handleClick = (e: MouseEvent) => {
-    const target = e.currentTarget as HTMLDivElement;
-    const width = target.scrollWidth / 2;
-    setPosition({
-      width: width,
-      left: target.offsetLeft + width / 2,
-    });
+  const setIndicatorPosition = (target: HTMLDivElement | null) => {
+    if (target) {
+      const width = target.scrollWidth / 2;
+      setPosition({
+        width: width,
+        left: target.offsetLeft + width / 2,
+      });
+    }
   };
 
+  const handleClick = (e: MouseEvent) => {
+    const target = e.currentTarget as HTMLDivElement;
+    setIndicatorPosition(target);
+  };
+
+  useEffect(() => {
+    if (ref.current) {
+      const firstTab: HTMLDivElement | null =
+        ref.current.querySelector('.tabs-button');
+      setIndicatorPosition(firstTab);
+    }
+  }, []);
+
   return (
-    <StyledTabsWrap sx={sx}>
+    <StyledTabsWrap ref={ref} sx={sx}>
       {tabs.map((tab) => (
         <TabButton key={tab.label} handleClick={handleClick}>
           <Text>{tab.label}</Text>

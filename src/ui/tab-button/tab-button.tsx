@@ -17,6 +17,7 @@ const TabButton: FC<{
     return (
       <StyledTabButton
         ref={ref}
+        className={'tabs-button'}
         onClick={(e) => {
           handleClick && handleClick(e);
         }}
