@@ -8,6 +8,6 @@ export const StyledTabButton = styled(Box)(({ theme }) => ({
   padding: '10px',
   cursor: 'pointer',
   '&:hover': {
-    background: theme.palette.background.secondary,
+    background: theme.palette.background.light,
   },
 }));
