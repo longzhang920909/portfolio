@@ -19,6 +19,10 @@ const IconLink: FC<{
         textDecoration: 'none',
         color: theme.palette.text.secondary,
         lineHeight: 1,
+        transition: 'all .3s',
+        '&:hover': {
+          color: theme.palette.text.primary,
+        },
       })}
     >
       <Box as={'span'} sx={() => ({ width: 20, height: 20 })}>

@@ -1,21 +1,25 @@
 import { FC } from 'react';
-import { useTheme } from 'styled-components';
 import type { TTextProps } from './assets/text.types';
+import Box from '../box/box.tsx';
 
 const Text: FC<TTextProps> = ({
   variant = 'main',
   children,
-  style = {},
-  as: Component = 'div',
+  sx,
+  as = 'div',
 }) => {
-  const theme = useTheme();
-  const styleObj = {
-    ...theme.text.variants[variant],
-    color: 'inherit', // theme.palette.text.primary
-    ...style,
-  };
-
-  return <Component style={styleObj}>{children}</Component>;
+  return (
+    <Box
+      as={as}
+      sx={(theme) => ({
+        ...theme.text.variants[variant],
+        color: 'inherit', // theme.palette.text.primary
+        ...(sx ? sx(theme) : {}),
+      })}
+    >
+      {children}
+    </Box>
+  );
 };
 
 export default Text;
