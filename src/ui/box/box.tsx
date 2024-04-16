@@ -1,14 +1,7 @@
 import { FC, HTMLAttributes } from 'react';
-import styled, { CSSObject, DefaultTheme, useTheme } from 'styled-components';
-
-interface TBoxProps {
-  sx?: (theme: DefaultTheme) => CSSObject;
-  as?: keyof HTMLElementTagNameMap;
-}
-
-const StyledBox = styled('div')<{ $ownStyle: any }>(({ $ownStyle }) => ({
-  ...$ownStyle,
-}));
+import { useTheme } from 'styled-components';
+import type { TBoxProps } from './assets/box.types';
+import { StyledBox } from './assets/box.styles.ts';
 
 const Box: FC<
   HTMLAttributes<HTMLElement> & TBoxProps & { [key: string]: any }
