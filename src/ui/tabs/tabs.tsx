@@ -7,7 +7,7 @@ import TabButton from '../tab-button/tab-button.tsx';
 const Tabs: FC<TTabsProps> = ({ sx }) => {
   return (
     <StyledTabsWrap sx={sx}>
-      <TabButton>
+      <TabButton isActive={true}>
         <Text>About</Text>
       </TabButton>
       <TabButton>
