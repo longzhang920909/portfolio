@@ -8,6 +8,7 @@ import Box from '../../ui/box/box.tsx';
 import IconLink from '../../ui/icon-link';
 import { GithubIcon, SuitcaseIcon } from '../../ui/icons';
 import InstagramIcon from '../../ui/icons/instagram-icon.tsx';
+import Tabs from '../../ui/tabs';
 
 const Profile: FC = () => {
   return (
@@ -54,6 +55,7 @@ const Profile: FC = () => {
             href={'javascript:void'}
           />
         </Box>
+        <Tabs sx={() => ({ marginTop: '40px' })} />
       </Container>
     </div>
   );
