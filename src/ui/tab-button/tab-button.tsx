@@ -16,10 +16,9 @@ const TabButton: FC<{
       as={as}
       className={`tabs-button tabs-button-${value}`}
       id={`${value}`}
-      onClick={(e) => {
+      onClick={(e: MouseEvent) => {
         handleClick && handleClick(e);
       }}
-      sx={() => ({})}
     >
       {children}
     </StyledTabButton>

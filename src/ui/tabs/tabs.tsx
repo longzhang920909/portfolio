@@ -5,6 +5,7 @@ import { TTabsProps } from './assets/tabs.types.ts';
 import TabButton from '../tab-button/tab-button.tsx';
 import styled from 'styled-components';
 import Box from '../box';
+import { NavLink } from 'react-router-dom';
 
 const StyledIndicator = styled(Box)(({ theme }) => ({
   height: '3px',
@@ -26,6 +27,8 @@ const Tabs: FC<TTabsProps> = ({ sx, tabs, getValue, currentValue }) => {
         width: width,
         left: target.offsetLeft + width / 2,
       });
+    } else {
+      setPosition({ width: 0, left: 0 });
     }
   };
 
@@ -46,16 +49,17 @@ const Tabs: FC<TTabsProps> = ({ sx, tabs, getValue, currentValue }) => {
   return (
     <StyledTabsWrap ref={ref} sx={sx}>
       {tabs.map((tab) => (
-        <TabButton
-          key={tab.value}
-          value={tab.value}
-          handleClick={(e) => {
-            handleClick(e);
-            getValue && getValue(tab);
-          }}
-        >
-          <Text>{tab.label}</Text>
-        </TabButton>
+        <NavLink key={tab.value} to={tab.href} style={{ all: 'unset' }}>
+          <TabButton
+            value={tab.value}
+            handleClick={(e) => {
+              handleClick(e);
+              getValue && getValue(tab);
+            }}
+          >
+            <Text>{tab.label}</Text>
+          </TabButton>
+        </NavLink>
       ))}
       <StyledIndicator
         sx={() => ({
