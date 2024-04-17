@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Box from '../../box';
+import Box from '../../../ui/box';
 
 export const StyledTabsWrap = styled(Box)(() => ({
   position: 'relative',

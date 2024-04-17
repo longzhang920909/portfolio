@@ -7,7 +7,8 @@ import Profile from '../components/profile';
 import theme from '../shared/theme';
 import { AppContainer, GlobalStyles } from './assets/styles.ts';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Container from '../ui/container';
+import Box from '../ui/box';
+import About from '../pages/about';
 
 const App: FC = () => {
   return (
@@ -16,14 +17,14 @@ const App: FC = () => {
       <ThemeProvider theme={theme}>
         <Router>
           <Profile />
-          <Container>
+          <Box sx={() => ({ marginTop: '30px' })}>
             <Routes>
-              <Route path={'/'} element={'about'} />
-              <Route path={'/skills'} element={'skills'} />
-              <Route path={'/projects'} element={'projects'} />
-              <Route path={'/contact'} element={'contact'} />
+              <Route path={'/'} element={<About />} />
+              <Route path={'/skills'} element={''} />
+              <Route path={'/projects'} element={''} />
+              <Route path={'/contact'} element={''} />
             </Routes>
-          </Container>
+          </Box>
         </Router>
       </ThemeProvider>
     </AppContainer>

@@ -8,7 +8,7 @@ import Box from '../../ui/box/box.tsx';
 import IconLink from '../../ui/icon-link';
 import { GithubIcon, SuitcaseIcon } from '../../ui/icons';
 import InstagramIcon from '../../ui/icons/instagram-icon.tsx';
-import Tabs from '../../ui/tabs';
+import NavigationTabs from '../navigation-tabs';
 import { useLocation } from 'react-router-dom';
 
 const Profile: FC = () => {
@@ -65,7 +65,7 @@ const Profile: FC = () => {
             href={'javascript:void'}
           />
         </Box>
-        <Tabs
+        <NavigationTabs
           currentValue={currentTab}
           // getValue={(tab) => setCurrentTab(tab.value as string)}
           tabs={[

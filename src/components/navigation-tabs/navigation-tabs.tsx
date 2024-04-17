@@ -1,10 +1,10 @@
 import { FC, MouseEvent, useEffect, useRef, useState } from 'react';
-import { StyledTabsWrap } from './assets/tabs.styles';
-import Text from '../text';
-import { TTabsProps } from './assets/tabs.types.ts';
-import TabButton from '../tab-button/tab-button.tsx';
+import { StyledTabsWrap } from './assets/navigation-tabs.styles.ts';
+import Text from '../../ui/text';
+import { TTabsProps } from './assets/navigation-tabs.types.ts';
+import TabButton from '../../ui/tab-button/tab-button.tsx';
 import styled from 'styled-components';
-import Box from '../box';
+import Box from '../../ui/box';
 import { NavLink } from 'react-router-dom';
 
 const StyledIndicator = styled(Box)(({ theme }) => ({
@@ -15,7 +15,12 @@ const StyledIndicator = styled(Box)(({ theme }) => ({
   transition: 'all .3s',
 }));
 
-const Tabs: FC<TTabsProps> = ({ sx, tabs, getValue, currentValue }) => {
+const NavigationTabs: FC<TTabsProps> = ({
+  sx,
+  tabs,
+  getValue,
+  currentValue,
+}) => {
   const [position, setPosition] = useState({ width: 0, left: 0 });
 
   const ref = useRef<HTMLDivElement>();
@@ -71,4 +76,4 @@ const Tabs: FC<TTabsProps> = ({ sx, tabs, getValue, currentValue }) => {
   );
 };
 
-export default Tabs;
+export default NavigationTabs;
