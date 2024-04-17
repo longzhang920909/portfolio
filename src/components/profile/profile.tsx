@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import Container from '../../ui/container/container';
 import Text from '../../ui/text';
 import Banner from '../banner';
@@ -9,11 +9,17 @@ import IconLink from '../../ui/icon-link';
 import { GithubIcon, SuitcaseIcon } from '../../ui/icons';
 import InstagramIcon from '../../ui/icons/instagram-icon.tsx';
 import Tabs from '../../ui/tabs';
+import { useLocation } from 'react-router-dom';
 
 const Profile: FC = () => {
+  const location = useLocation();
+
   const [currentTab, setCurrentTab] = useState('about');
 
-  console.log(currentTab);
+  useEffect(() => {
+    const formattedPathname = location.pathname.replace(/\//, '');
+    setCurrentTab(formattedPathname);
+  }, [location.pathname]);
 
   return (
     <div>
@@ -61,12 +67,12 @@ const Profile: FC = () => {
         </Box>
         <Tabs
           currentValue={currentTab}
-          getValue={(tab) => setCurrentTab(tab.value as string)}
+          // getValue={(tab) => setCurrentTab(tab.value as string)}
           tabs={[
-            { label: 'About', value: 'about' },
-            { label: 'Skills', value: 'skills' },
-            { label: 'Projects', value: 'projects' },
-            { label: 'Contact', value: 'contact' },
+            { label: 'About', value: 'about', href: '' },
+            { label: 'Skills', value: 'skills', href: '/skills' },
+            { label: 'Projects', value: 'projects', href: '/projects' },
+            { label: 'Contact', value: 'contact', href: '/contact' },
           ]}
           sx={() => ({ marginTop: '40px' })}
         />

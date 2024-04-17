@@ -19,7 +19,6 @@ const TabButton: FC<{
       onClick={(e: MouseEvent) => {
         handleClick && handleClick(e);
       }}
-      sx={() => ({})}
     >
       {children}
     </StyledTabButton>
