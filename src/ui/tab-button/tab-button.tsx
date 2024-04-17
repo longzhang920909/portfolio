@@ -1,6 +1,6 @@
 import { FC, forwardRef, MouseEvent, ReactNode } from 'react';
 import { StyledTabButton } from './assets/tab-button.styles';
-import { TTab } from '../tabs/assets/tabs.types.ts';
+import { TTab } from '../../components/navigation-tabs/assets/navigation-tabs.types.ts';
 import { TBoxProps } from '../box/assets/box.types.ts';
 
 const TabButton: FC<{

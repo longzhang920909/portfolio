@@ -2,6 +2,8 @@ import { FC } from 'react';
 import Container from '../../ui/container';
 import Text from '../../ui/text';
 import Mark from '../../ui/mark';
+import Cta from '../../components/cta';
+import Box from '../../ui/box';
 
 const About: FC = () => {
   return (
@@ -25,6 +27,9 @@ const About: FC = () => {
           continuously enhance my skill set.
         </p>
       </Text>
+      <Box sx={() => ({ marginTop: '30px' })}>
+        <Cta />
+      </Box>
     </Container>
   );
 };
