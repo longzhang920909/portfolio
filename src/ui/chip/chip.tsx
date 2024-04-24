@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import Box from '../box';
+import { StyledChip } from './assets/chip.styles.ts';
 
 const Chip: FC = () => {
-  return <Box></Box>;
+  return <StyledChip></StyledChip>;
 };
 
 export default Chip;
