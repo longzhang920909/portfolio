@@ -2,8 +2,9 @@ import { FC } from 'react';
 import Box from '../../ui/box';
 import Text from '../../ui/text';
 import Button from '../../ui/button';
+import { TBoxProps } from '../../ui/box/assets/box.types.ts';
 
-const Cta: FC = () => {
+const Cta: FC<{ sx?: TBoxProps['sx'] }> = ({ sx }) => {
   return (
     <Box
       sx={(theme) => ({
@@ -12,6 +13,7 @@ const Cta: FC = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
+        ...(sx?.(theme) || {}),
       })}
     >
       <Text as={'h2'} variant={'h3'}>
