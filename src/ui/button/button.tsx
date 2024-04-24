@@ -4,7 +4,7 @@ import { TBoxProps } from '../box/assets/box.types.ts';
 import type { TButtonProps } from './assets/button.types.ts';
 
 const variants: { [key: string]: NonNullable<TBoxProps['sx']> } = {
-  primary: (theme) => ({}),
+  primary: () => ({}),
   secondary: (theme) => ({
     border: '2px solid',
     borderColor: theme.palette.text.primary,
