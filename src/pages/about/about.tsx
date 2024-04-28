@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Cta from '../../components/cta';
+import Box from '../../ui/box';
 import Container from '../../ui/container';
 import Mark from '../../ui/mark';
 import Text from '../../ui/text';
@@ -31,16 +32,18 @@ const About: FC = () => {
       <Text as={'h2'} variant={'h3'} sx={() => ({ marginTop: '40px' })}>
         Work experience
       </Text>
-      <TimelineItem
-        title={'Front-end developer'}
-        text={
-          'Are sentiments apartments decisively the especially alteration. ' +
-          'Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. ' +
-          'Incommode so intention defective at convinced.' +
-          '\nLed income months itself and houses you. After nor you leave might share court balls.'
-        }
-        date={'Jul 2023 - present'}
-      />
+      <Box sx={() => ({ marginTop: '16px' })}>
+        <TimelineItem
+          title={'Front-end developer'}
+          text={
+            'Are sentiments apartments decisively the especially alteration. ' +
+            'Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. ' +
+            'Incommode so intention defective at convinced.' +
+            '\nLed income months itself and houses you. After nor you leave might share court balls.'
+          }
+          date={'Jul 2023 - present'}
+        />
+      </Box>
     </Container>
   );
 };
