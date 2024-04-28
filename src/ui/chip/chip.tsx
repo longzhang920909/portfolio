@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { StyledChip } from './assets/chip.styles.ts';
 
-const Chip: FC<{ color?: 'primary' | 'secondary'; label?: string }> = ({
+const Chip: FC<{ color?: 'primary' | 'secondary'; children?: string }> = ({
   color = 'secondary',
-  label,
+  children,
 }) => {
-  return <StyledChip $color={color}>{label}</StyledChip>;
+  return <StyledChip $color={color}>{children}</StyledChip>;
 };
 
 export default Chip;
