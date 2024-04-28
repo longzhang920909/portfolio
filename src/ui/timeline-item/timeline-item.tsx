@@ -2,10 +2,11 @@ import { FC } from 'react';
 import Box from '../box';
 import Text from '../text';
 
-const text =
-  'Are sentiments apartments decisively the especially alteration. Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced.\nLed income months itself and houses you. After nor you leave might share court balls.';
-
-const TimelineItem: FC = () => {
+const TimelineItem: FC<{
+  title: string;
+  text: string;
+  date: string;
+}> = ({ title, text, date }) => {
   console.log(text);
   return (
     <Box
@@ -17,11 +18,11 @@ const TimelineItem: FC = () => {
       })}
     >
       <Box>
-        <Text variant={'small'}>Jul 2023 - present</Text>
+        <Text variant={'small'}>{date}</Text>
       </Box>
       <Box>
         <Text as={'h3'} variant={'h4'}>
-          Front-end developer (React)
+          {title}
         </Text>
         <Text variant={'small'} sx={() => ({ marginTop: '8px' })}>
           {text.split('\n').map((paragraph) => (
