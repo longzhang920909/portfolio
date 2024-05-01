@@ -50,7 +50,7 @@ const variants = {
       ...shared,
     },
     h2: {
-      fontSize: '30px',
+      fontSize: '28px',
       fontWeight: 600,
       ...shared,
     },
