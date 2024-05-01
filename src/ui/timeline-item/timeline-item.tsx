@@ -2,9 +2,9 @@ import { FC } from 'react';
 import Box from '../box';
 import Chip from '../chip';
 import Text from '../text';
-import { TTimelineItemProps } from './assets/timeline-item.types.ts';
+import { TTimelineItemProps } from './assets/timeline-item.model.ts';
 
-const TimelineItem: FC<TTimelineItemProps> = ({ title, text, date }) => {
+const TimelineItem: FC<TTimelineItemProps> = ({ title, text, date, chips }) => {
   return (
     <Box
       sx={() => ({
@@ -26,8 +26,17 @@ const TimelineItem: FC<TTimelineItemProps> = ({ title, text, date }) => {
             <p>{paragraph}</p>
           ))}
         </Text>
-        <Box sx={() => ({ marginTop: '14px' })}>
-          <Chip>TypeScript</Chip>
+        <Box
+          sx={() => ({
+            marginTop: '14px',
+            display: 'flex',
+            gap: '8px',
+            flexWrap: 'wrap',
+          })}
+        >
+          {chips.map((chip) => (
+            <Chip color={chip.color}>{chip.label}</Chip>
+          ))}
         </Box>
       </Box>
     </Box>

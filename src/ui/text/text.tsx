@@ -1,12 +1,13 @@
 import { FC } from 'react';
-import type { TTextProps } from './assets/text.types';
 import Box from '../box/box.tsx';
+import type { TTextProps } from './assets/text.model.ts';
 
 const Text: FC<TTextProps> = ({
   variant = 'main',
   children,
   sx,
   as = 'div',
+  className,
 }) => {
   return (
     <Box
@@ -16,6 +17,7 @@ const Text: FC<TTextProps> = ({
         color: 'inherit', // theme.palette.text.primary
         ...(sx ? sx(theme) : {}),
       })}
+      className={className}
     >
       {children}
     </Box>

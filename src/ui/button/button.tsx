@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Box from '../box';
-import { TBoxProps } from '../box/assets/box.types.ts';
-import type { TButtonProps } from './assets/button.types.ts';
+import { TBoxProps } from '../box/assets/box.model.ts';
+import type { TButtonProps } from './assets/button.model.ts';
 
 const variants: { [key: string]: NonNullable<TBoxProps['sx']> } = {
   primary: () => ({}),

@@ -1,6 +1,6 @@
 import { FC, forwardRef, HTMLAttributes } from 'react';
 import { useTheme } from 'styled-components';
-import type { TBoxProps } from './assets/box.types';
+import type { TBoxProps } from './assets/box.model.ts';
 import { StyledBox } from './assets/box.styles.ts';
 
 const Box: FC<

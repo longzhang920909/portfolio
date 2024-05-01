@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import Box from '../../ui/box';
-import Text from '../../ui/text';
+import { TBoxProps } from '../../ui/box/assets/box.model.ts';
 import Button from '../../ui/button';
-import { TBoxProps } from '../../ui/box/assets/box.types.ts';
+import Text from '../../ui/text';
 
 const Cta: FC<{ sx?: TBoxProps['sx'] }> = ({ sx }) => {
   return (
