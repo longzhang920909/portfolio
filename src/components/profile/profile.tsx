@@ -1,15 +1,15 @@
 import { FC, useEffect, useState } from 'react';
-import Container from '../../ui/container/container';
-import Text from '../../ui/text';
-import Banner from '../banner';
-import image from './assets/img/photo.png';
-import { StyledProfilePicture } from './assets/profile.styles';
+import { useLocation } from 'react-router-dom';
 import Box from '../../ui/box/box.tsx';
-import IconLink from '../../ui/icon-link';
+import Container from '../../ui/container/container';
 import { GithubIcon, SuitcaseIcon } from '../../ui/icons';
 import InstagramIcon from '../../ui/icons/instagram-icon.tsx';
+import Text from '../../ui/text';
+import UiLink from '../../ui/ui-link';
+import Banner from '../banner';
 import NavigationTabs from '../navigation-tabs';
-import { useLocation } from 'react-router-dom';
+import image from './assets/img/photo.png';
+import { StyledProfilePicture } from './assets/profile.styles';
 
 const Profile: FC = () => {
   const location = useLocation();
@@ -49,17 +49,17 @@ const Profile: FC = () => {
             gap: '24px',
           })}
         >
-          <IconLink
+          <UiLink
             icon={<SuitcaseIcon />}
             label={'Available'}
             href={'javascript:void'}
           />
-          <IconLink
+          <UiLink
             icon={<GithubIcon />}
             label={'Github'}
             href={'javascript:void'}
           />
-          <IconLink
+          <UiLink
             icon={<InstagramIcon />}
             label={'Instagram'}
             href={'javascript:void'}
