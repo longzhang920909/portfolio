@@ -8,4 +8,20 @@ export const StyledFooterWrap = styled(Box)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+  '@media (max-width: 575px)': {
+    padding: '10px 24px',
+    display: 'block',
+  },
+}));
+
+export const StyledFooterMenu = styled(Box)(() => ({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '16px',
+  '@media (max-width: 575px)': {
+    justifyContent: 'space-between',
+    width: '100%',
+    marginTop: '16px',
+    // flexDirection: 'column',
+  },
 }));

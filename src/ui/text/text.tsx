@@ -7,6 +7,7 @@ const Text: FC<TTextProps> = ({
   children,
   sx,
   as = 'div',
+  className,
 }) => {
   return (
     <Box
@@ -16,6 +17,7 @@ const Text: FC<TTextProps> = ({
         color: 'inherit', // theme.palette.text.primary
         ...(sx ? sx(theme) : {}),
       })}
+      className={className}
     >
       {children}
     </Box>
