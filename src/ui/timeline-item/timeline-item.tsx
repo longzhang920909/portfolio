@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Box from '../box';
 import Chip from '../chip';
 import Text from '../text';
-import { TTimelineItemProps } from './assets/timeline-item.types.ts';
+import { TTimelineItemProps } from './assets/timeline-item.model.ts';
 
 const TimelineItem: FC<TTimelineItemProps> = ({ title, text, date, chips }) => {
   return (

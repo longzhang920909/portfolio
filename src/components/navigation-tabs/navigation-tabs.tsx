@@ -1,11 +1,11 @@
 import { FC, MouseEvent, useEffect, useRef, useState } from 'react';
-import { StyledTabsWrap } from './assets/navigation-tabs.styles.ts';
-import Text from '../../ui/text';
-import { TTabsProps } from './assets/navigation-tabs.types.ts';
-import TabButton from '../../ui/tab-button/tab-button.tsx';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import Box from '../../ui/box';
-import { NavLink } from 'react-router-dom';
+import TabButton from '../../ui/tab-button/tab-button.tsx';
+import Text from '../../ui/text';
+import { TTabsProps } from './assets/navigation-tabs.model.ts';
+import { StyledTabsWrap } from './assets/navigation-tabs.styles.ts';
 
 const StyledIndicator = styled(Box)(({ theme }) => ({
   height: '3px',

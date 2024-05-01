@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import theme from '../../../shared/theme';
-import { TBoxProps } from '../../box/assets/box.types.ts';
+import { TBoxProps } from '../../box/assets/box.model.ts';
 
 export type TTextVariants = keyof typeof theme.text.variants;
 

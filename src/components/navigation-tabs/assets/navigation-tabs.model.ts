@@ -1,4 +1,4 @@
-import { TBoxProps } from '../../../ui/box/assets/box.types.ts';
+import { TBoxProps } from '../../../ui/box/assets/box.model.ts';
 
 export type TTab = { label: string; value: string | number };
 

@@ -1,7 +1,7 @@
 import { FC, forwardRef, MouseEvent, ReactNode } from 'react';
+import { TTab } from '../../components/navigation-tabs/assets/navigation-tabs.model.ts';
+import { TBoxProps } from '../box/assets/box.model.ts';
 import { StyledTabButton } from './assets/tab-button.styles';
-import { TTab } from '../../components/navigation-tabs/assets/navigation-tabs.types.ts';
-import { TBoxProps } from '../box/assets/box.types.ts';
 
 const TabButton: FC<{
   children: ReactNode;

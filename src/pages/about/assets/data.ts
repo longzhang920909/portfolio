@@ -1,4 +1,4 @@
-import { TTimelineItemProps } from '../../../ui/timeline-item/assets/timeline-item.types.ts';
+import { TTimelineItemProps } from '../../../ui/timeline-item/assets/timeline-item.model.ts';
 
 export const timelineData: TTimelineItemProps[] = [
   {
