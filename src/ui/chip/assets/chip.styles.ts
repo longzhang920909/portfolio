@@ -14,6 +14,23 @@ const sizes = {
   },
 };
 
+const getVariant = (
+  color: string,
+  variant: NonNullable<TChipProps['variant']>,
+) => {
+  const variants = {
+    filled: {},
+    outlined: {
+      border: `${color} 1px solid`,
+    },
+  };
+  return {
+    backgroundColor: alpha(color, 0.1),
+    color: color,
+    ...variants[variant],
+  };
+};
+
 const StyledChipBase = styled(Box)(() => {
   return {
     lineHeight: 1,
@@ -26,10 +43,9 @@ export const StyledChip = styled(StyledChipBase)<{
   $color: NonNullable<TChipProps['color']>;
   $size: NonNullable<TChipProps['size']>;
   $variant: NonNullable<TChipProps['variant']>;
-}>(({ $color, $size }) => {
+}>(({ $color, $size, $variant }) => {
   return {
-    backgroundColor: alpha($color, 0.1),
-    color: $color,
     ...sizes[$size],
+    ...getVariant($color, $variant),
   };
 });
