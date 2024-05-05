@@ -8,6 +8,7 @@ import { ThemeProvider } from 'styled-components';
 import Footer from '../components/footer';
 import Profile from '../components/profile';
 import About from '../pages/about';
+import Skills from '../pages/skills';
 import theme from '../shared/theme';
 import Box from '../ui/box';
 import { AppContainer, GlobalStyles } from './assets/styles.ts';
@@ -34,7 +35,7 @@ const App: FC = () => {
           <Box sx={() => ({ marginTop: '30px' })}>
             <Routes>
               <Route path={'/'} element={<About />} />
-              <Route path={'/skills'} element={''} />
+              <Route path={'/skills'} element={<Skills />} />
               <Route path={'/projects'} element={''} />
               <Route path={'/contact'} element={''} />
             </Routes>
