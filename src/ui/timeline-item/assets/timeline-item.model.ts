@@ -3,7 +3,7 @@ export interface TTimelineItemProps {
   text: string;
   date: string;
   chips: {
-    color?: 'primary' | 'secondary';
+    color?: string;
     label: string;
   }[];
 }
