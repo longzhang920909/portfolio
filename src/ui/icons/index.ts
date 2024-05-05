@@ -1,5 +1,5 @@
-import GithubIcon from './github-icon.tsx';
-import InstagramIcon from './instagram-icon.tsx';
-import SuitcaseIcon from './suitcase-icon.tsx';
+import GithubIcon from './github-icon';
+import InstagramIcon from './instagram-icon';
+import SuitcaseIcon from './suitcase-icon';
 
 export { SuitcaseIcon, GithubIcon, InstagramIcon };

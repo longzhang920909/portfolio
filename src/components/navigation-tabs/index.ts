@@ -1,1 +1,1 @@
-export { default } from './navigation-tabs.tsx';
+export { default } from './navigation-tabs';

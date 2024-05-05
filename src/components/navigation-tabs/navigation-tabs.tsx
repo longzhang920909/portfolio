@@ -2,7 +2,7 @@ import { FC, MouseEvent, useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import Box from '../../ui/box';
-import TabButton from '../../ui/tab-button/tab-button.tsx';
+import TabButton from '../../ui/tab-button/tab-button';
 import Text from '../../ui/text';
 import { TTabsProps } from './assets/navigation-tabs.model.ts';
 import { StyledTabsWrap } from './assets/navigation-tabs.styles.ts';

@@ -1,1 +1,1 @@
-export { default } from './banner.tsx';
+export { default } from './banner';

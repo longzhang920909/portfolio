@@ -5,9 +5,10 @@ import Container from '../../ui/container';
 import Mark from '../../ui/mark';
 import Text from '../../ui/text';
 import TimelineItem from '../../ui/timeline-item';
-import { timelineData } from './assets/data.ts';
+import useTimelineData from './utils/use-timeline-data';
 
 const About: FC = () => {
+  const timelineData = useTimelineData();
   return (
     <Container>
       <Text as={'h2'} variant={'h3'}>
