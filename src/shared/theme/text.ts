@@ -2,6 +2,7 @@ const fontFamily = 'Poppins, sans-serif';
 const lineHeight = 1.75;
 
 const shared = {
+  padding: 0,
   margin: 0,
 };
 
@@ -50,7 +51,7 @@ const variants = {
       ...shared,
     },
     h2: {
-      fontSize: '30px',
+      fontSize: '28px',
       fontWeight: 600,
       ...shared,
     },
