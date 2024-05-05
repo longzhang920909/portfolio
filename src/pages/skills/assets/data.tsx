@@ -49,7 +49,7 @@ export const skillGroups = [
     chips: [
       { icon: <WebstormIcon />, label: 'WebStorm', color: '#00CDD7' },
       { icon: <VSCodeIcon />, label: 'VS Code', color: '#28A0F1' },
-      { icon: <FigmaIcon />, label: 'Figma', color: '#52AB4D' },
+      { icon: <FigmaIcon />, label: 'Figma', color: '#F24E1E' },
       { icon: <PixsoIcon />, label: 'Pixso', color: undefined },
       { icon: <JiraIcon />, label: 'Jira', color: '#2684FF' },
     ],
