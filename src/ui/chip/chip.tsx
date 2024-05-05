@@ -8,9 +8,16 @@ const Chip: FC<TChipProps> = ({
   size = 'small',
   variant = 'filled',
   sx,
+  onClick,
 }) => {
   return (
-    <StyledChip sx={sx} $color={color} $size={size} $variant={variant}>
+    <StyledChip
+      sx={sx}
+      $color={color}
+      $size={size}
+      $variant={variant}
+      onClick={onClick}
+    >
       {children}
     </StyledChip>
   );

@@ -45,6 +45,7 @@ export const StyledChip = styled(StyledChipBase)<{
   $variant: NonNullable<TChipProps['variant']>;
 }>(({ $color, $size, $variant }) => {
   return {
+    transition: 'all .3s',
     ...sizes[$size],
     ...getVariant($color, $variant),
   };

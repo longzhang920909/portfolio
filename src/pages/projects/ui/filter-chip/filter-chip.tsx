@@ -3,7 +3,11 @@ import { useTheme } from 'styled-components';
 import Chip from '../../../../ui/chip';
 import { TFilterChipProps } from './assets/filter-chip.model.ts';
 
-const FilterChip: FC<TFilterChipProps> = ({ isActive, children }) => {
+const FilterChip: FC<TFilterChipProps> = ({
+  isActive,
+  children,
+  handleClick,
+}) => {
   const theme = useTheme();
   const color = isActive
     ? theme.palette.primary.main
@@ -14,6 +18,7 @@ const FilterChip: FC<TFilterChipProps> = ({ isActive, children }) => {
       sx={() => ({ cursor: 'pointer' })}
       size={'medium'}
       variant={'outlined'}
+      onClick={() => handleClick()}
     >
       {children}
     </Chip>
