@@ -1,28 +1,13 @@
 import { FC } from 'react';
 import Container from '../../ui/container';
 import IconChip from '../../ui/icon-chip';
-import JavascriptIcon from '../../ui/icons/javascript-icon.tsx';
-import TypescriptIcon from '../../ui/icons/typescript-icon.tsx';
 import Text from '../../ui/text';
+import { skillGroups } from './assets/data';
 import {
   StyledChipBlock,
   StyledSkillGroup,
   StyledSkillsWrap,
-} from './assets/skills.styles.ts';
-
-const skills = [
-  {
-    title: '> Programming languages',
-    chips: [
-      { icon: <JavascriptIcon />, label: 'JavaScript', color: '#F4DE26' },
-      { icon: <TypescriptIcon />, label: 'TypeScript', color: '#397CC6' },
-    ],
-  },
-  {
-    title: '> Front end',
-    chips: [],
-  },
-];
+} from './assets/skills.styles';
 
 const Skills: FC = () => {
   return (
@@ -31,7 +16,7 @@ const Skills: FC = () => {
         My skills & toolbox
       </Text>
       <StyledSkillsWrap>
-        {skills.map((group) => (
+        {skillGroups.map((group) => (
           <StyledSkillGroup>
             <Text>{group.title}</Text>
             <StyledChipBlock>
