@@ -1,9 +1,9 @@
 import { FC, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import Box from '../../ui/box/box.tsx';
+import Box from '../../ui/box/box';
 import Container from '../../ui/container/container';
 import { GithubIcon, SuitcaseIcon } from '../../ui/icons';
-import InstagramIcon from '../../ui/icons/instagram-icon.tsx';
+import InstagramIcon from '../../ui/icons/instagram-icon';
 import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
 import Banner from '../banner';

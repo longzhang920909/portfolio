@@ -3,13 +3,14 @@ import { TChipProps } from './assets/chip.model.ts';
 import { StyledChip } from './assets/chip.styles.ts';
 
 const Chip: FC<TChipProps> = ({
-  color = 'secondary',
+  color = '#FFFFFF',
   children,
   size = 'small',
   variant = 'filled',
+  sx,
 }) => {
   return (
-    <StyledChip $color={color} $size={size} $variant={variant}>
+    <StyledChip sx={sx} $color={color} $size={size} $variant={variant}>
       {children}
     </StyledChip>
   );

@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import Box from '../box/box.tsx';
+import Box from '../box/box';
 import Text from '../text';
 import { StyledUiLink } from './assets/ui-link.styles.ts';
 

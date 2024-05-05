@@ -8,6 +8,7 @@ import { ThemeProvider } from 'styled-components';
 import Footer from '../components/footer';
 import Profile from '../components/profile';
 import About from '../pages/about';
+import Projects from '../pages/projects';
 import Skills from '../pages/skills';
 import theme from '../shared/theme';
 import Box from '../ui/box';
@@ -36,7 +37,7 @@ const App: FC = () => {
             <Routes>
               <Route path={'/'} element={<About />} />
               <Route path={'/skills'} element={<Skills />} />
-              <Route path={'/projects'} element={''} />
+              <Route path={'/projects'} element={<Projects />} />
               <Route path={'/contact'} element={''} />
             </Routes>
           </Box>

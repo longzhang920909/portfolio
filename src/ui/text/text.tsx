@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Box from '../box/box.tsx';
+import Box from '../box/box';
 import type { TTextProps } from './assets/text.model.ts';
 
 const Text: FC<TTextProps> = ({

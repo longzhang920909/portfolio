@@ -1,20 +1,20 @@
-import CssIcon from '../../../ui/icons/css-icon.tsx';
-import ExpressIcon from '../../../ui/icons/express-icon.tsx';
-import FigmaIcon from '../../../ui/icons/figma-icon.tsx';
-import HtmlIcon from '../../../ui/icons/html-icon.tsx';
-import JavascriptIcon from '../../../ui/icons/javascript-icon.tsx';
-import JiraIcon from '../../../ui/icons/jira-icon.tsx';
-import MongodbIcon from '../../../ui/icons/mongodb-icon.tsx';
-import MuiIcon from '../../../ui/icons/mui-icon.tsx';
-import NodejsIcon from '../../../ui/icons/nodejs-icon.tsx';
-import PixsoIcon from '../../../ui/icons/pixso-icon.tsx';
-import ReactIcon from '../../../ui/icons/react-icon.tsx';
-import ReduxIcon from '../../../ui/icons/redux-icon.tsx';
-import SassIcon from '../../../ui/icons/sass-icon.tsx';
-import StorybookIcon from '../../../ui/icons/storybook-icon.tsx';
-import TypescriptIcon from '../../../ui/icons/typescript-icon.tsx';
-import VSCodeIcon from '../../../ui/icons/vscode-icon.tsx';
-import WebstormIcon from '../../../ui/icons/webstorm-icon.tsx';
+import CssIcon from '../../../ui/icons/css-icon';
+import ExpressIcon from '../../../ui/icons/express-icon';
+import FigmaIcon from '../../../ui/icons/figma-icon';
+import HtmlIcon from '../../../ui/icons/html-icon';
+import JavascriptIcon from '../../../ui/icons/javascript-icon';
+import JiraIcon from '../../../ui/icons/jira-icon';
+import MongodbIcon from '../../../ui/icons/mongodb-icon';
+import MuiIcon from '../../../ui/icons/mui-icon';
+import NodejsIcon from '../../../ui/icons/nodejs-icon';
+import PixsoIcon from '../../../ui/icons/pixso-icon';
+import ReactIcon from '../../../ui/icons/react-icon';
+import ReduxIcon from '../../../ui/icons/redux-icon';
+import SassIcon from '../../../ui/icons/sass-icon';
+import StorybookIcon from '../../../ui/icons/storybook-icon';
+import TypescriptIcon from '../../../ui/icons/typescript-icon';
+import VSCodeIcon from '../../../ui/icons/vscode-icon';
+import WebstormIcon from '../../../ui/icons/webstorm-icon';
 
 export const skillGroups = [
   {

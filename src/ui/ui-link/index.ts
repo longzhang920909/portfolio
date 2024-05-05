@@ -1,1 +1,1 @@
-export { default } from './ui-link.tsx';
+export { default } from './ui-link';
