@@ -18,10 +18,13 @@ export const GlobalStyles = createGlobalStyle({
   body: {
     background: theme.palette.background.main,
   },
-  '#root': {
-    padding: '30px 0 50px',
-  },
   p: {
     '&:not(:last-child)': { marginBottom: '.5em' },
+  },
+  '#root': {
+    padding: '30px 0 50px',
+    '@media (max-width: 575px)': {
+      padding: 0,
+    },
   },
 });

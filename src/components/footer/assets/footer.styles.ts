@@ -9,8 +9,9 @@ export const StyledFooterWrap = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'space-between',
   '@media (max-width: 575px)': {
-    padding: '10px 24px',
-    display: 'block',
+    padding: '10px 24px 20px',
+    flexDirection: 'column-reverse',
+    rowGap: '16px',
   },
 }));
 
