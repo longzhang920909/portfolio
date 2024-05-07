@@ -4,8 +4,8 @@ import FilterIcon from '../../ui/icons/filter-icon.tsx';
 import { TFilterProps } from './assets/filter.model.ts';
 import FilterChip from './ui/filter-chip';
 
-const Filter: FC<TFilterProps> = ({ filters, handleSelect }) => {
-  const [currentFilter, setCurrentFilter] = useState('static');
+const Filter: FC<TFilterProps> = ({ filters, handleSelect, defaultValue }) => {
+  const [currentFilter, setCurrentFilter] = useState(defaultValue);
 
   const handleSelectFilter = (name: string) => {
     setCurrentFilter(name);

@@ -6,4 +6,5 @@ export interface TFilterItem {
 export interface TFilterProps {
   filters: TFilterItem[];
   handleSelect?: (filter: TFilterItem) => void;
+  defaultValue: string;
 }

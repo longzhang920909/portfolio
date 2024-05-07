@@ -13,6 +13,7 @@ const Projects: FC = () => {
     <Container>
       <Filter
         filters={filters}
+        defaultValue={'static'}
         handleSelect={(filter) => console.log(filter)}
       />
     </Container>
