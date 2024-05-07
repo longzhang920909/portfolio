@@ -10,6 +10,7 @@ const Filter: FC<TFilterProps> = ({ filters, handleSelect, defaultValue }) => {
   const handleSelectFilter = (name: string) => {
     setCurrentFilter(name);
   };
+  
   return (
     <Box
       sx={() => ({

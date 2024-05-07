@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import Filter from '../../components/filter';
+import Project from '../../components/project';
+import Box from '../../ui/box';
 import Container from '../../ui/container';
 
 const Projects: FC = () => {
@@ -16,6 +18,9 @@ const Projects: FC = () => {
         defaultValue={'static'}
         handleSelect={(filter) => console.log(filter)}
       />
+      <Box sx={() => ({ marginTop: '30px' })}>
+        <Project />
+      </Box>
     </Container>
   );
 };
