@@ -5,6 +5,7 @@ import CodeIcon from '../../ui/icons/code-icon.tsx';
 import ExternalLinkIcon from '../../ui/icons/external-link-icon.tsx';
 import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
+import { TProjectProps } from './assets/project.model.ts';
 import {
   StyledProjectChips,
   StyledProjectLinks,
@@ -13,7 +14,7 @@ import {
   StyledProjectWrap,
 } from './assets/project.styles';
 
-const Project: FC = () => {
+const Project: FC<TProjectProps> = () => {
   return (
     <StyledProjectWrap>
       <StyledProjectThumbnail>
