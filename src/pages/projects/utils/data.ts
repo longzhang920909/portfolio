@@ -69,7 +69,7 @@ const useProjectData: () => (TProjectProps & {
       title: 'Weather App',
       description:
         'Web-based weather app that displays information about any city.',
-      href: 'https://weather-react-emiliaweb.vercel.app/',
+      href: 'https://weather-app-by-emilia.vercel.app/',
       chips: [
         { children: 'Responsive', color: 'primary' },
         { children: 'React', color: 'secondary' },
