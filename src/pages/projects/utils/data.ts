@@ -64,6 +64,29 @@ const useProjectData: () => (TProjectProps & {
       ],
       categories: ['spa'],
     },
+    {
+      img: '/projects/weather.png',
+      title: 'Weather App',
+      description:
+        'A web-based weather app that displays information about any city.',
+      href: 'https://weather-react-emiliaweb.vercel.app/',
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'React', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'OpenWeather API', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/weather-react',
+        },
+      ],
+      categories: ['spa'],
+    },
   ];
 };
 
