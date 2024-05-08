@@ -43,6 +43,7 @@ export const StyledProjectTitle = styled(Text)(() => {
 export const StyledProjectChips = styled(Box)(() => {
   return {
     display: 'flex',
+    alignItems: 'center',
     gap: '8px',
     flexWrap: 'wrap',
     marginTop: '14px',
@@ -52,6 +53,7 @@ export const StyledProjectChips = styled(Box)(() => {
 export const StyledProjectLinks = styled(Box)(() => {
   return {
     display: 'flex',
+    alignItems: 'center',
     gap: '14px',
     flexWrap: 'wrap',
     marginTop: '14px',

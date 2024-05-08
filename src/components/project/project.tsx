@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import Box from '../../ui/box';
-import Chip from '../../ui/chip';
 import ExternalLinkIcon from '../../ui/icons/external-link-icon.tsx';
 import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
+import ProjectChip from '../project-chip';
 import { TProjectProps } from './assets/project.model.ts';
 import {
   StyledProjectChips,
@@ -36,9 +36,9 @@ const Project: FC<TProjectProps> = ({
         </Text>
         <StyledProjectChips>
           {chips.map(({ children, ...props }, i) => (
-            <Chip key={i} {...props}>
+            <ProjectChip key={i} {...props}>
               {children}
-            </Chip>
+            </ProjectChip>
           ))}
         </StyledProjectChips>
         <StyledProjectLinks>

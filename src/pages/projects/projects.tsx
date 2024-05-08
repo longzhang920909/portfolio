@@ -1,25 +1,35 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import Filter from '../../components/filter';
 import Project from '../../components/project';
 import Box from '../../ui/box';
 import Container from '../../ui/container';
+import useProjectData from './utils/data.ts';
 
 const Projects: FC = () => {
+  const projects = useProjectData();
+
+  const [currentFilter, setCurrentFilter] = useState('spa');
+
   const filters = [
-    { label: 'Static', name: 'static' },
-    { label: 'Plain JS', name: 'plain' },
     { label: 'SPA', name: 'spa' },
+    { label: 'Plain JS', name: 'plain' },
+    { label: 'Static', name: 'static' },
   ];
 
   return (
     <Container>
       <Filter
         filters={filters}
-        defaultValue={'static'}
-        handleSelect={(filter) => console.log(filter)}
+        defaultValue={'spa'}
+        handleSelect={(filter) => setCurrentFilter(filter.name)}
       />
       <Box sx={() => ({ marginTop: '30px' })}>
-        <Project />
+        {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
+        {projects
+          .filter((project) => project.categories.includes(currentFilter))
+          .map(({ categories, ...props }) => (
+            <Project {...props} />
+          ))}
       </Box>
     </Container>
   );
