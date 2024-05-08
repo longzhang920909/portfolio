@@ -1,8 +1,8 @@
 import { FC, useState } from 'react';
 import Filter from '../../components/filter';
 import Project from '../../components/project';
-import Box from '../../ui/box';
 import Container from '../../ui/container';
+import { StyledProjectList } from './assets/projects.styles.ts';
 import useProjectData from './utils/data.ts';
 
 const Projects: FC = () => {
@@ -23,14 +23,14 @@ const Projects: FC = () => {
         defaultValue={'spa'}
         handleSelect={(filter) => setCurrentFilter(filter.name)}
       />
-      <Box sx={() => ({ marginTop: '30px' })}>
-        {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
+      <StyledProjectList>
         {projects
           .filter((project) => project.categories.includes(currentFilter))
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           .map(({ categories, ...props }) => (
             <Project {...props} />
           ))}
-      </Box>
+      </StyledProjectList>
     </Container>
   );
 };

@@ -14,8 +14,10 @@ const useProjectData: () => (TProjectProps & {
         { children: 'Desktop only', color: 'primary' },
         { children: 'React', color: 'secondary' },
         { children: 'Redux', color: 'secondary' },
+        { children: 'RTK Query', color: 'secondary' },
         { children: 'TypeScript', color: 'secondary' },
         { children: 'MUI', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
         { children: 'NodeJS', color: 'secondary' },
         { children: 'Express', color: 'secondary' },
         { children: 'MongoDB', color: 'secondary' },
@@ -38,6 +40,29 @@ const useProjectData: () => (TProjectProps & {
         },
       ],
       categories: ['spa', 'back-end'],
+    },
+    {
+      img: '/projects/fast-pace.png',
+      title: '"Fast Pace" - Sneaker Store',
+      description:
+        'A ReactJS store with order placement, catalog browsing, and color/price filtering.\n',
+      href: 'https://fast-pace.vercel.app/',
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'React', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+        { children: 'Redux', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/fast-pace-app',
+        },
+      ],
+      categories: ['spa'],
     },
   ];
 };
