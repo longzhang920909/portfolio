@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import Box from '../../ui/box';
 import Chip from '../../ui/chip';
-import CodeIcon from '../../ui/icons/code-icon.tsx';
 import ExternalLinkIcon from '../../ui/icons/external-link-icon.tsx';
 import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
@@ -13,33 +12,43 @@ import {
   StyledProjectTitle,
   StyledProjectWrap,
 } from './assets/project.styles';
+import getLinkIcon from './utils/get-link-icon';
 
-const Project: FC<TProjectProps> = () => {
+const Project: FC<TProjectProps> = ({
+  img,
+  href,
+  title,
+  description,
+  chips = [],
+  links = [],
+}) => {
   return (
     <StyledProjectWrap>
       <StyledProjectThumbnail>
-        <img />
+        <img alt={title} src={img} />
       </StyledProjectThumbnail>
       <Box>
         <StyledProjectTitle as={'h3'}>
-          <span>Supported neglected meal</span> <ExternalLinkIcon />
+          <a href={href}>{title}</a> <ExternalLinkIcon />
         </StyledProjectTitle>
         <Text variant={'small'} sx={() => ({ marginTop: '8px' })}>
-          Our side fail find like now. Discovered travelling for insensible
-          partiality unpleasing impossible she.
+          {description}
         </Text>
         <StyledProjectChips>
-          <Chip>Desktop only</Chip>
-          <Chip>React</Chip>
+          {chips.map(({ children, ...props }) => (
+            <Chip {...props}>{children}</Chip>
+          ))}
         </StyledProjectChips>
         <StyledProjectLinks>
-          <UiLink
-            label={'Source'}
-            href={''}
-            size={'small'}
-            icon={<CodeIcon />}
-            iconPosition={'right'}
-          />
+          {links.map((link) => (
+            <UiLink
+              label={link.label}
+              href={link.href}
+              icon={getLinkIcon(link.type)}
+              size={'small'}
+              iconPosition={'right'}
+            />
+          ))}
         </StyledProjectLinks>
       </Box>
     </StyledProjectWrap>

@@ -1,18 +1,19 @@
+import { ReactNode } from 'react';
 import { TChipProps } from '../../../ui/chip/assets/chip.model.ts';
 
-export type TChipLinkType = 'source' | 'docs' | 'default';
+export type TProjectLinkType = 'source' | 'docs' | 'default';
 
-export interface TChipLink {
+export interface TProjectLink {
   label: string;
   href: string;
-  type: TChipLinkType;
+  type?: TProjectLinkType;
 }
 
 export interface TProjectProps {
   img: string;
   title: string;
   href: string;
-  description: string;
+  description: ReactNode;
   chips: TChipProps[];
-  links: TChipLink[];
+  links: TProjectLink[];
 }

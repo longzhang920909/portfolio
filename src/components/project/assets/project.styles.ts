@@ -33,6 +33,10 @@ export const StyledProjectTitle = styled(Text)(() => {
     '& svg': {
       marginTop: '8px',
     },
+    '& a': {
+      color: 'inherit',
+      textDecoration: 'none',
+    },
   };
 });
 
