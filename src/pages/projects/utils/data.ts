@@ -131,6 +131,50 @@ const useProjectData: () => (TProjectProps & {
         },
       ],
     },
+    {
+      img: '/projects/portfolio-v3.png',
+      title: 'Portfolio v3 (2023)',
+      description: 'Third version of my personal portfolio website. 2023.',
+      href: 'https://emilia.alwaysdata.net/',
+      categories: ['static'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+        { children: 'PHP', color: 'secondary' },
+        { children: 'EmailJS', color: 'secondary' },
+      ],
+      links: [
+        // {
+        //   label: 'Source',
+        //   type: 'source',
+        //   href: 'https://github.com/isemilia/portfolio-v3',
+        // },
+      ],
+    },
+    {
+      img: '/projects/portfolio-v2.png',
+      title: 'Portfolio v2 (2022)',
+      description: 'Second iteration of my portfolio.',
+      href: 'https://isemilia.github.io/portfolio-v2/',
+      categories: ['static'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/portfolio-v2',
+        },
+      ],
+    },
   ];
 };
 
