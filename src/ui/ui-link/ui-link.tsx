@@ -1,22 +1,34 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import Box from '../box/box';
 import Text from '../text';
-import { StyledUiLink } from './assets/ui-link.styles.ts';
+import { TUiLinkProps } from './assets/ui-link.model';
+import { StyledUiLink } from './assets/ui-link.styles';
 
-const UiLink: FC<{
-  icon?: ReactNode;
-  label: string;
-  href: string;
-  size?: 'medium' | 'small';
-}> = ({ icon, label, href, size = 'medium' }) => {
+const UiLink: FC<TUiLinkProps> = ({
+  icon,
+  label,
+  href,
+  size = 'medium',
+  iconPosition = 'left',
+}) => {
+  const textSize = {
+    medium: 'main',
+    small: 'small',
+  };
   return (
-    <StyledUiLink as={'a'} href={href}>
+    <StyledUiLink
+      className={'link'}
+      as={'a'}
+      href={href}
+      $size={size}
+      $iconPosition={iconPosition}
+    >
       {icon && (
-        <Box as={'span'} sx={() => ({ width: 20, height: 20 })}>
+        <Box as={'span'} className={'link-icon'}>
           {icon}
         </Box>
       )}
-      <Text as={'span'} variant={size === 'medium' ? 'main' : 'small'}>
+      <Text as={'span'} variant={textSize[size] as 'small' | 'main'}>
         {label}
       </Text>
     </StyledUiLink>
