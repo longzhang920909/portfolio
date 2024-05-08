@@ -134,7 +134,7 @@ const useProjectData: () => (TProjectProps & {
     {
       img: '/projects/portfolio-v3.png',
       title: 'Portfolio v3 (2023)',
-      description: 'Third version of my personal portfolio website. 2023.',
+      description: 'Third version of my personal portfolio website.',
       href: 'https://emilia.alwaysdata.net/',
       categories: ['static'],
       chips: [
