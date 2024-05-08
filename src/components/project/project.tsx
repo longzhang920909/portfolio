@@ -31,7 +31,7 @@ const Project: FC<TProjectProps> = ({
         <StyledProjectTitle as={'h3'}>
           <a href={href}>{title}</a> <ExternalLinkIcon />
         </StyledProjectTitle>
-        <Text variant={'small'} sx={() => ({ marginTop: '8px' })}>
+        <Text variant={'small'} sx={() => ({ marginTop: '4px' })}>
           {description}
         </Text>
         <StyledProjectChips>
