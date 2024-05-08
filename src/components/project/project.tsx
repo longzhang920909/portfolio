@@ -29,7 +29,10 @@ const Project: FC<TProjectProps> = ({
       </StyledProjectThumbnail>
       <Box>
         <StyledProjectTitle as={'h3'}>
-          <a href={href}>{title}</a> <ExternalLinkIcon />
+          <a href={href} target={'_blank'}>
+            {title}
+          </a>{' '}
+          <ExternalLinkIcon />
         </StyledProjectTitle>
         <Text variant={'small'} sx={() => ({ marginTop: '4px' })}>
           {description}
