@@ -28,7 +28,7 @@ const Projects: FC = () => {
           .filter((project) => project.categories.includes(currentFilter))
           // eslint-disable-next-line @typescript-eslint/no-unused-vars
           .map(({ categories, ...props }) => (
-            <Project {...props} />
+            <Project key={props.title} {...props} />
           ))}
       </StyledProjectList>
     </Container>

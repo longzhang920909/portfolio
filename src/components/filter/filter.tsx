@@ -10,7 +10,7 @@ const Filter: FC<TFilterProps> = ({ filters, handleSelect, defaultValue }) => {
   const handleSelectFilter = (name: string) => {
     setCurrentFilter(name);
   };
-  
+
   return (
     <Box
       sx={() => ({
@@ -22,6 +22,7 @@ const Filter: FC<TFilterProps> = ({ filters, handleSelect, defaultValue }) => {
       <FilterIcon />
       {filters.map((filter) => (
         <FilterChip
+          key={filter.name}
           isActive={currentFilter === filter.name}
           handleClick={() => {
             handleSelectFilter(filter.name);
