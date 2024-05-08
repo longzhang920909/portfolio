@@ -45,7 +45,7 @@ const useProjectData: () => (TProjectProps & {
       img: '/projects/fast-pace.png',
       title: '"Fast Pace" - Sneaker Store',
       description:
-        'A ReactJS store with order placement, catalog browsing, and color/price filtering.\n',
+        'ReactJS store with order placement, catalog browsing, and color/price filtering.',
       href: 'https://fast-pace.vercel.app/',
       chips: [
         { children: 'Responsive', color: 'primary' },
@@ -68,8 +68,8 @@ const useProjectData: () => (TProjectProps & {
       img: '/projects/weather.png',
       title: 'Weather App',
       description:
-        'A web-based weather app that displays information about any city.',
-      href: 'https://weather-react-emiliaweb.vercel.app/',
+        'Web-based weather app that displays information about any city.',
+      href: 'https://weather-app-by-emilia.vercel.app/',
       chips: [
         { children: 'Responsive', color: 'primary' },
         { children: 'React', color: 'secondary' },
@@ -87,18 +87,95 @@ const useProjectData: () => (TProjectProps & {
       ],
       categories: ['spa'],
     },
+    {
+      img: '/projects/stopwatch.png',
+      title: 'Stopwatch & Notes',
+      description:
+        'Web-based stopwatch with note-taking feature and local storage for data persistence. One of my oldest projects.',
+      href: 'https://isemilia.github.io/stopwatch/dist/',
+      categories: ['plain'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/stopwatch',
+        },
+      ],
+    },
+    {
+      img: '/projects/date-countdown.png',
+      title: 'Date Countdown',
+      description:
+        'Web-based date countdown tool with persistent data on refresh. One of my earliest JS apps.',
+      href: 'https://isemilia.github.io/date-calculator/app',
+      categories: ['plain'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/date-calculator',
+        },
+      ],
+    },
+    {
+      img: '/projects/portfolio-v3.png',
+      title: 'Portfolio v3 (2023)',
+      description: 'Third version of my personal portfolio website. 2023.',
+      href: 'https://emilia.alwaysdata.net/',
+      categories: ['static'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+        { children: 'PHP', color: 'secondary' },
+        { children: 'EmailJS', color: 'secondary' },
+      ],
+      links: [
+        // {
+        //   label: 'Source',
+        //   type: 'source',
+        //   href: 'https://github.com/isemilia/portfolio-v3',
+        // },
+      ],
+    },
+    {
+      img: '/projects/portfolio-v2.png',
+      title: 'Portfolio v2 (2022)',
+      description: 'Second iteration of my portfolio.',
+      href: 'https://isemilia.github.io/portfolio-v2/',
+      categories: ['static'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/portfolio-v2',
+        },
+      ],
+    },
   ];
 };
 
 export default useProjectData;
-
-
-// {
-//   img: '',
-//   title: '',
-//   description: '',
-//   href: '',
-//   categories: [],
-//   chips: [],
-//   links: [],
-// },
