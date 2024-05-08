@@ -45,7 +45,7 @@ const useProjectData: () => (TProjectProps & {
       img: '/projects/fast-pace.png',
       title: '"Fast Pace" - Sneaker Store',
       description:
-        'A ReactJS store with order placement, catalog browsing, and color/price filtering.\n',
+        'ReactJS store with order placement, catalog browsing, and color/price filtering.',
       href: 'https://fast-pace.vercel.app/',
       chips: [
         { children: 'Responsive', color: 'primary' },
@@ -68,7 +68,7 @@ const useProjectData: () => (TProjectProps & {
       img: '/projects/weather.png',
       title: 'Weather App',
       description:
-        'A web-based weather app that displays information about any city.',
+        'Web-based weather app that displays information about any city.',
       href: 'https://weather-react-emiliaweb.vercel.app/',
       chips: [
         { children: 'Responsive', color: 'primary' },
