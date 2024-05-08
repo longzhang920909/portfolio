@@ -10,6 +10,8 @@ const UiLink: FC<TUiLinkProps> = ({
   href,
   size = 'medium',
   iconPosition = 'left',
+  as = 'a',
+  ...props
 }) => {
   const textSize = {
     medium: 'main',
@@ -18,10 +20,11 @@ const UiLink: FC<TUiLinkProps> = ({
   return (
     <StyledUiLink
       className={'link'}
-      as={'a'}
+      as={as}
       href={href}
       $size={size}
       $iconPosition={iconPosition}
+      {...props}
     >
       {icon && (
         <Box as={'span'} className={'link-icon'}>
