@@ -35,13 +35,16 @@ const Project: FC<TProjectProps> = ({
           {description}
         </Text>
         <StyledProjectChips>
-          {chips.map(({ children, ...props }) => (
-            <Chip {...props}>{children}</Chip>
+          {chips.map(({ children, ...props }, i) => (
+            <Chip key={i} {...props}>
+              {children}
+            </Chip>
           ))}
         </StyledProjectChips>
         <StyledProjectLinks>
-          {links.map((link) => (
+          {links.map((link, i) => (
             <UiLink
+              key={i}
               label={link.label}
               href={link.href}
               icon={getLinkIcon(link.type)}
