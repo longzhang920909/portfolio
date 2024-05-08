@@ -87,18 +87,51 @@ const useProjectData: () => (TProjectProps & {
       ],
       categories: ['spa'],
     },
+    {
+      img: '/projects/stopwatch.png',
+      title: 'Stopwatch & Notes',
+      description:
+        'Web-based stopwatch with note-taking feature and local storage for data persistence. One of my oldest projects.',
+      href: 'https://isemilia.github.io/stopwatch/dist/',
+      categories: ['plain'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/stopwatch',
+        },
+      ],
+    },
+    {
+      img: '/projects/date-countdown.png',
+      title: 'Date Countdown',
+      description:
+        'Web-based date countdown tool with persistent data on refresh. One of my earliest JS apps.',
+      href: 'https://isemilia.github.io/date-calculator/app',
+      categories: ['plain'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/date-calculator',
+        },
+      ],
+    },
   ];
 };
 
 export default useProjectData;
-
-
-// {
-//   img: '',
-//   title: '',
-//   description: '',
-//   href: '',
-//   categories: [],
-//   chips: [],
-//   links: [],
-// },
