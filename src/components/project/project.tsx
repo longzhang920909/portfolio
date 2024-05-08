@@ -50,6 +50,7 @@ const Project: FC<TProjectProps> = ({
               icon={getLinkIcon(link.type)}
               size={'small'}
               iconPosition={'right'}
+              target={'_blank'}
             />
           ))}
         </StyledProjectLinks>
