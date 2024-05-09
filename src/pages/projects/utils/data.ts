@@ -175,6 +175,30 @@ const useProjectData: () => (TProjectProps & {
         },
       ],
     },
+    {
+      img: '/projects/openbiz.png',
+      title: 'Openbiz',
+      description:
+        'Landing page for a service for non-residents of Kazakhstan.',
+      href: 'https://isemilia.github.io/openbiz/dist',
+      categories: ['static'],
+      chips: [
+        { children: 'Responsive', color: 'primary' },
+        { children: 'HTML', color: 'secondary' },
+        { children: 'CSS', color: 'secondary' },
+        { children: 'SCSS', color: 'secondary' },
+        { children: 'JavaScript', color: 'secondary' },
+        { children: 'PHP', color: 'secondary' },
+        { children: 'WordPress', color: 'secondary' },
+      ],
+      links: [
+        {
+          label: 'Source',
+          type: 'source',
+          href: 'https://github.com/isemilia/openbiz',
+        },
+      ],
+    },
   ];
 };
 
