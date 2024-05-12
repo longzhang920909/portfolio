@@ -49,20 +49,16 @@ const Profile: FC = () => {
             gap: '24px',
           })}
         >
-          <UiLink
-            icon={<SuitcaseIcon />}
-            label={'Available'}
-            href={'javascript:void'}
-          />
+          <UiLink icon={<SuitcaseIcon />} label={'Available'} />
           <UiLink
             icon={<GithubIcon />}
             label={'Github'}
-            href={'javascript:void'}
+            href={'https://github.com/isemilia'}
           />
           <UiLink
             icon={<InstagramIcon />}
             label={'Instagram'}
-            href={'javascript:void'}
+            href={'https://www.instagram.com/emscript'}
           />
         </Box>
         <NavigationTabs
