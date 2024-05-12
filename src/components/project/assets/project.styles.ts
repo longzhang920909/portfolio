@@ -7,19 +7,26 @@ export const StyledProjectWrap = styled(Box)(() => {
     display: 'grid',
     gridTemplateColumns: '180px 1fr',
     gap: '16px',
+    '@media (max-width: 575px)': {
+      gridTemplateColumns: 'clamp(50px, 14vw, 180px) 1fr',
+    },
   };
 });
 
 export const StyledProjectThumbnail = styled(Box)(({ theme }) => {
   return {
     backgroundColor: theme.palette.background.light,
-    height: '120px',
     borderRadius: '8px',
     overflow: 'hidden',
+    width: '100%',
+    aspectRatio: '1 / 0.6667',
     '& img': {
       height: '100%',
       width: '100%',
       objectFit: 'cover',
+    },
+    '@media (max-width: 575px)': {
+      marginTop: '4px',
     },
   };
 });
