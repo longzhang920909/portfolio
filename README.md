@@ -1,2 +1,2 @@
 # Portfolio V4
-Detailed docs will be available shortly
+[Notion](https://isemilia.notion.site/Portfolio-V4-c6756963456347d3a90b04ff0ac3d2f0?pvs=4)
