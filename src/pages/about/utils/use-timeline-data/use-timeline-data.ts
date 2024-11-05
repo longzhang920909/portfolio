@@ -7,9 +7,23 @@ const useTimelineData: () => TTimelineItemProps[] = () => {
 
   return [
     {
-      title: 'Front-end (React) developer',
-      text: 'Participate in the development of a CRM system using React and Typescript, implementing FSD architecture principles.\nCreate a UI library based on MUI.\nRefactor project structures and optimize code in accordance with SOLID, DRY, and KISS principles.',
-      date: 'May 2023 - present',
+      title: 'Middle front-end developer',
+      text: 'Develop interfaces for various single-page applications using React, TypeScript and other technologies.',
+      date: 'Oct 2024 - present',
+      chips: [
+        { label: 'React', color },
+        { label: 'Redux', color },
+        { label: 'TypeScript', color },
+        { label: 'JavaScript', color },
+        { label: 'SCSS', color },
+        { label: 'MUI', color },
+        { label: 'RTK Query', color },
+      ],
+    },
+    {
+      title: 'Front-end developer',
+      text: 'Participate in the development of a CRM system using React and Typescript, implementing FSD architecture principles.\nCreate a UI library based on MUI.\nRefactor project structure and optimize code in accordance with SOLID, DRY, and KISS principles.\nAssist in developing the back end for a chat widget using Web Sockets and MongoDB.',
+      date: 'May 2023 - Oct 2024',
       chips: [
         { label: 'React', color },
         { label: 'Redux', color },
@@ -19,6 +33,7 @@ const useTimelineData: () => TTimelineItemProps[] = () => {
         { label: 'Storybook', color },
         { label: 'MUI', color },
         { label: 'RTK Query', color },
+        { label: 'MongoDB', color },
         { label: 'GraphQL', color },
         { label: 'NodeJS', color },
         { label: 'Express', color },

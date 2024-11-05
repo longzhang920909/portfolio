@@ -8,7 +8,7 @@ import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
 import Banner from '../banner';
 import NavigationTabs from '../navigation-tabs';
-import image from './assets/img/photo.png';
+import image from './assets/img/photo.jpg';
 import { StyledProfilePicture } from './assets/profile.styles';
 
 const Profile: FC = () => {
