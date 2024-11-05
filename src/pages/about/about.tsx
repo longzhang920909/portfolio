@@ -22,8 +22,7 @@ const About: FC = () => {
           actively delving into <Mark>NodeJS</Mark>, <Mark>Express</Mark>, and{' '}
           <Mark>MongoDB</Mark> for back-end development. I also enjoy designing
           systems and <Mark>architectures</Mark> that streamline the creation of
-          scalable applications, making the development process more efficient
-          and effective.
+          scalable applications, making the development process more efficient.
         </p>
         <p>
           I'm readily available to collaborate on exciting projects and
