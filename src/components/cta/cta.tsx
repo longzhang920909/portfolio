@@ -3,6 +3,7 @@ import Box from '../../ui/box';
 import { TBoxProps } from '../../ui/box/assets/box.model.ts';
 import Button from '../../ui/button';
 import Text from '../../ui/text';
+import { Link } from 'react-router-dom';
 
 const Cta: FC<{ sx?: TBoxProps['sx'] }> = ({ sx }) => {
   return (
@@ -19,7 +20,9 @@ const Cta: FC<{ sx?: TBoxProps['sx'] }> = ({ sx }) => {
       <Text as={'h2'} variant={'h3'}>
         Got an idea?
       </Text>
-      <Button variant={'secondary'}>Let's chat!</Button>
+      <Button variant={'secondary'} as={Link} to={'/contact'}>
+        Let's chat!
+      </Button>
     </Box>
   );
 };

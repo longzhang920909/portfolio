@@ -11,10 +11,15 @@ const variants: { [key: string]: NonNullable<TBoxProps['sx']> } = {
   }),
 };
 
-const Button: FC<TButtonProps> = ({ children, variant = 'primary' }) => {
+const Button: FC<TButtonProps & { [key: string]: any }> = ({
+  children,
+  variant = 'primary',
+  as = 'button',
+  ...props
+}) => {
   return (
     <Box
-      as={'button'}
+      as={as}
       sx={(theme) => ({
         all: 'unset',
         padding: '8px 16px',
@@ -24,6 +29,7 @@ const Button: FC<TButtonProps> = ({ children, variant = 'primary' }) => {
         lineHeight: 1,
         ...variants[variant](theme),
       })}
+      {...props}
     >
       {children}
     </Box>
