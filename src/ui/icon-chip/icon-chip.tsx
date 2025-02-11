@@ -18,7 +18,6 @@ const IconChip: FC<{ icon: ReactNode; label?: string; color?: string }> = ({
         borderRadius: '28px',
         background: alpha(color, 0.1),
         '& .icon-chip-label': {
-          fontWeight: 500,
           lineHeight: 1,
         },
         '& .icon-chip-svg': {

@@ -27,4 +27,7 @@ export const GlobalStyles = createGlobalStyle({
       padding: 0,
     },
   },
+  img: {
+    maxWidth: '100%',
+  },
 });
