@@ -8,21 +8,29 @@ const useTimelineData: () => TTimelineItemProps[] = () => {
   return [
     {
       title: 'Middle front-end developer',
-      text: 'Develop interfaces for various single-page applications using React, TypeScript and other technologies.',
+      text: 'Built the front end for a social assistance management app using React, TypeScript, and MUI.\n' +
+        'Integrated RTK, RTK Query, and SSE for real-time updates.\n' +
+        'Wrote component tests with Vitest & React Testing Library.\n' +
+        'Contributed to an HRM app using Next.js, TypeScript, and Mantine UI.',
       date: 'Oct 2024 - present',
       chips: [
         { label: 'React', color },
+        { label: 'Next', color },
         { label: 'Redux', color },
         { label: 'TypeScript', color },
         { label: 'JavaScript', color },
         { label: 'SCSS', color },
         { label: 'MUI', color },
+        { label: 'Mantine UI', color },
         { label: 'RTK Query', color },
       ],
     },
     {
       title: 'Front-end developer',
-      text: 'Participate in the development of a CRM system using React and Typescript, implementing FSD architecture principles.\nCreate a UI library based on MUI.\nRefactor project structure and optimize code in accordance with SOLID, DRY, and KISS principles.\nAssist in developing the back end for a chat widget using Web Sockets and MongoDB.',
+      text: 'Participated in the development of a CRM system using React and TypeScript, implementing FSD architecture principles.\n' +
+        'Created a UI library based on MUI.\n' +
+        'Refactored project structure and optimized code in accordance with SOLID, DRY, and KISS principles.\n' +
+        'Assisted in developing the back end for a chat widget using WebSockets and MongoDB.',
       date: 'May 2023 - Oct 2024',
       chips: [
         { label: 'React', color },
@@ -41,7 +49,10 @@ const useTimelineData: () => TTimelineItemProps[] = () => {
     },
     {
       title: 'Front-end developer',
-      text: 'Website markup and integration into CMS WordPress, coupled with optimization and modifications to pre-existing websites.',
+      text: 'Developed responsive websites from Figma designs using HTML, CSS, and JavaScript.\n' +
+        'Integrated layouts with WordPress, including theme development and plugin setup.\n' +
+        'Optimized website performance with SEO.\n' +
+        'Maintained and updated websites by fixing bugs and implementing changes.',
       date: 'Mar 2022 - May 2023',
       chips: [
         { label: 'HTML', color },

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Box from '../../ui/box/box';
 import Container from '../../ui/container/container';
 import { GithubIcon, SuitcaseIcon } from '../../ui/icons';
-import InstagramIcon from '../../ui/icons/instagram-icon';
+// import InstagramIcon from '../../ui/icons/instagram-icon';
 import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
 import Banner from '../banner';
@@ -38,7 +38,7 @@ const Profile: FC = () => {
           <p>Passionate about clean code and delightful user experiences ✨</p>
           <p>
             Front-end developer. Back-end explorer. UX/UI enthusiast. Creative
-            coder. Content creator.
+            thinker.
           </p>
         </Text>
         <Box
@@ -55,15 +55,14 @@ const Profile: FC = () => {
             label={'Github'}
             href={'https://github.com/isemilia'}
           />
-          <UiLink
-            icon={<InstagramIcon />}
-            label={'Instagram'}
-            href={'https://www.instagram.com/emscript'}
-          />
+          {/*<UiLink*/}
+          {/*  icon={<InstagramIcon />}*/}
+          {/*  label={'Instagram'}*/}
+          {/*  href={'https://www.instagram.com/emscript'}*/}
+          {/*/>*/}
         </Box>
         <NavigationTabs
           currentValue={currentTab}
-          // getValue={(tab) => setCurrentTab(tab.value as string)}
           tabs={[
             { label: 'About', value: 'about', href: '' },
             { label: 'Skills', value: 'skills', href: '/skills' },

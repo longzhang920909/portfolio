@@ -16,17 +16,22 @@ const About: FC = () => {
       </Text>
       <Text>
         <p>
-          My name is Emilia. I specialize in building interactive user
-          interfaces with <Mark>React</Mark>, <Mark>Redux</Mark>, and{' '}
-          <Mark>TypeScript</Mark>. Besides refining my front-end skills, I'm
-          actively delving into <Mark>NodeJS</Mark>, <Mark>Express</Mark>, and{' '}
-          <Mark>MongoDB</Mark> for back-end development. I also enjoy designing
-          systems and <Mark>architectures</Mark> that streamline the creation of
-          scalable applications, making the development process more efficient.
+          I’m a front-end developer with over three years of experience building user-friendly,
+          scalable applications with <Mark>TypeScript</Mark>, <Mark>React</Mark>, and <Mark>Next.js</Mark>.
+          I enjoy crafting intuitive interfaces, optimizing performance,
+          and designing efficient system architectures.
         </p>
+
         <p>
-          I'm readily available to collaborate on exciting projects and
-          continuously enhance my skill set.
+          I’ve worked on CRM and HRM platforms, <Mark>UI libraries</Mark>, and business tools,
+          integrating <Mark>REST API</Mark>, <Mark>GraphQL</Mark>, and real-time updates.
+          While front-end development is my focus,
+          I also explore back-end technologies like Node.js, Express,
+          and databases to gain a deeper understanding of the overall development process.
+        </p>
+
+        <p>
+          Always open to exciting projects and new challenges!
         </p>
       </Text>
       <Cta sx={() => ({ marginTop: '30px' })} />
