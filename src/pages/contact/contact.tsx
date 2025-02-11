@@ -26,8 +26,8 @@ const Contact: FC = () => {
             icon={<GithubIcon />}
           />
           <UiLink
-            href={'https://www.instagram.com/emscript'}
-            label={'emscript'}
+            href={'https://www.instagram.com/coremilia'}
+            label={'coremilia'}
             icon={<InstagramIcon />}
           />
         </StyledContactLinks>
