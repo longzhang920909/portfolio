@@ -58,7 +58,7 @@ const Profile: FC = () => {
           {/*<UiLink*/}
           {/*  icon={<InstagramIcon />}*/}
           {/*  label={'Instagram'}*/}
-          {/*  href={'https://www.instagram.com/emscript'}*/}
+          {/*  href={'https://www.instagram.com/coremilia'}*/}
           {/*/>*/}
         </Box>
         <NavigationTabs
