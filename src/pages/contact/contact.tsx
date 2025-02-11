@@ -38,8 +38,8 @@ const Contact: FC = () => {
         </Text>
         <StyledContactLinks>
           <UiLink
-            href={'mailto:emiliadev@proton.me'}
-            label={'emiliadev@proton.me'}
+            href={'mailto:emiliaoffice@yandex.com'}
+            label={'emiliaoffice@yandex.com'}
             icon={<EmailIcon />}
           />
         </StyledContactLinks>
