@@ -24,12 +24,13 @@ const Contact: FC = () => {
             href={'https://github.com/isemilia'}
             label={'isemilia'}
             icon={<GithubIcon />}
+            target={'_blank'}
           />
-          {/*<UiLink*/}
-          {/*  href={'https://www.instagram.com/coremilia'}*/}
-          {/*  label={'coremilia'}*/}
-          {/*  icon={<InstagramIcon />}*/}
-          {/*/>*/}
+          <UiLink
+            href={'https://bsky.app/profile/coremilia.bsky.social'}
+            label={'coremilia.bsky.social'}
+            target={'_blank'}
+          />
         </StyledContactLinks>
       </StyledContactBlock>
       <StyledContactBlock>
