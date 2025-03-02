@@ -12,4 +12,5 @@ export interface TUiLinkProps extends TAnyProps {
   size?: 'medium' | 'small';
   iconPosition?: 'right' | 'left';
   as?: TBoxProps['as'];
+  target?: HTMLAnchorElement['target'];
 }
