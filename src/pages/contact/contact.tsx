@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Container from '../../ui/container';
-import { GithubIcon, InstagramIcon } from '../../ui/icons';
+import { GithubIcon } from '../../ui/icons';
 import EmailIcon from '../../ui/icons/email-icon.tsx';
 import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
@@ -25,11 +25,11 @@ const Contact: FC = () => {
             label={'isemilia'}
             icon={<GithubIcon />}
           />
-          <UiLink
-            href={'https://www.instagram.com/coremilia'}
-            label={'coremilia'}
-            icon={<InstagramIcon />}
-          />
+          {/*<UiLink*/}
+          {/*  href={'https://www.instagram.com/coremilia'}*/}
+          {/*  label={'coremilia'}*/}
+          {/*  icon={<InstagramIcon />}*/}
+          {/*/>*/}
         </StyledContactLinks>
       </StyledContactBlock>
       <StyledContactBlock>
