@@ -3,13 +3,15 @@ import { useLocation } from 'react-router-dom';
 import Box from '../../ui/box/box';
 import Container from '../../ui/container/container';
 import { GithubIcon, SuitcaseIcon } from '../../ui/icons';
-// import InstagramIcon from '../../ui/icons/instagram-icon';
 import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
 import Banner from '../banner';
 import NavigationTabs from '../navigation-tabs';
-import image from './assets/img/photo.jpg';
-import { StyledProfilePicture } from './assets/profile.styles';
+import image from './assets/img/photo.jpeg';
+import {
+  StyledProfilePicture,
+  StyledProfileWrap,
+} from './assets/profile.styles';
 
 const Profile: FC = () => {
   const location = useLocation();
@@ -25,15 +27,22 @@ const Profile: FC = () => {
     <div>
       <Banner />
       <Container>
-        <StyledProfilePicture>
-          <img src={image} alt="Photo of Emilia" />
-        </StyledProfilePicture>
-        <Text variant={'h2'} as={'h1'} sx={() => ({ marginTop: '20px' })}>
-          Emilia N
-        </Text>
-        <Text as={'h2'} variant={'h3'}>
-          Web developer
-        </Text>
+        <StyledProfileWrap>
+          <StyledProfilePicture>
+            <img src={image} alt="Photo of Emilia" />
+          </StyledProfilePicture>
+          <div>
+            <Text
+              variant={'h3'}
+              as={'h1'}
+              sx={() => ({ fontSize: 28, lineHeight: 1.4 })}
+            >
+              Emilia
+            </Text>
+            <Text as={'h2'}>Front-end developer</Text>
+          </div>
+        </StyledProfileWrap>
+
         <Text sx={() => ({ marginTop: '10px' })}>
           <p>Passionate about clean code and delightful user experiences ✨</p>
           <p>

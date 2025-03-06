@@ -1,15 +1,20 @@
-import { useMediaQuery } from 'react-responsive';
 import styled from 'styled-components';
 
+const pfpSize = 100;
+
+export const StyledProfileWrap = styled('div')(() => {
+  return {
+    marginTop: (pfpSize - pfpSize / 2) * -1,
+    display: 'flex',
+    alignItems: 'center',
+    gap: 18,
+  };
+});
+
 export const StyledProfilePicture = styled('div')(({ theme }) => {
-  const isMobile = useMediaQuery({ query: '(max-width: 575px)' });
-
-  const pfpSize = isMobile ? 120 : 160;
-
   return {
     width: pfpSize,
     height: pfpSize,
-    marginTop: (pfpSize - pfpSize / 2) * -1,
     borderRadius: '100%',
     overflow: 'hidden',
     position: 'relative',
