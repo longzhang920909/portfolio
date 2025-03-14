@@ -27,8 +27,8 @@ const Contact: FC = () => {
             target={'_blank'}
           />
           <UiLink
-            href={'https://bsky.app/profile/coremilia.bsky.social'}
-            label={'coremilia.bsky.social'}
+            href={'https://bsky.app/profile/emiliasonder.bsky.social'}
+            label={'emiliasonder.bsky.social'}
             target={'_blank'}
           />
         </StyledContactLinks>

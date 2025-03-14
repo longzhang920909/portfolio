@@ -7,7 +7,7 @@ import { StyledFooterMenu, StyledFooterWrap } from './assets/footer.styles.ts';
 const Footer: FC = () => {
   return (
     <StyledFooterWrap>
-      <Text className={'footer-copyright'}>Emilia N © 2024</Text>
+      <Text className={'footer-copyright'}>Emilia Sonder © 2024-2025</Text>
       <StyledFooterMenu>
         <UiLink as={NavLink} to={'/'} label={'About'} />
         <UiLink as={NavLink} to={'/skills'} label={'Skills'} />

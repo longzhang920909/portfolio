@@ -37,7 +37,7 @@ const Profile: FC = () => {
               as={'h1'}
               sx={() => ({ fontSize: 28, lineHeight: 1.4 })}
             >
-              Emilia
+              Emilia Sonder
             </Text>
             <Text as={'h2'}>Front-end developer</Text>
           </div>
