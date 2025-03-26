@@ -7,7 +7,7 @@ import Text from '../../ui/text';
 import UiLink from '../../ui/ui-link';
 import Banner from '../banner';
 import NavigationTabs from '../navigation-tabs';
-import image from './assets/img/photo.jpeg';
+import image from './assets/img/photo1.jpg';
 import {
   StyledProfilePicture,
   StyledProfileWrap,
@@ -29,7 +29,7 @@ const Profile: FC = () => {
       <Container>
         <StyledProfileWrap>
           <StyledProfilePicture>
-            <img src={image} alt="Photo of Emilia" />
+            <img src={image} alt="Photo of Long Zhang" />
           </StyledProfilePicture>
           <div>
             <Text
@@ -37,17 +37,16 @@ const Profile: FC = () => {
               as={'h1'}
               sx={() => ({ fontSize: 28, lineHeight: 1.4 })}
             >
-              Emilia Sonder
+              Long Zhang
             </Text>
-            <Text as={'h2'}>Front-end developer</Text>
+            <Text as={'h2'}>FullStack & Blockchain Developer</Text>
           </div>
         </StyledProfileWrap>
 
         <Text sx={() => ({ marginTop: '10px' })}>
           <p>Passionate about clean code and delightful user experiences ✨</p>
           <p>
-            Front-end developer. Back-end explorer. UX/UI enthusiast. Creative
-            thinker.
+            Advanced front-end developer capable of various kinds of frameworks and blockchain contracts.
           </p>
         </Text>
         <Box
@@ -62,13 +61,8 @@ const Profile: FC = () => {
           <UiLink
             icon={<GithubIcon />}
             label={'Github'}
-            href={'https://github.com/isemilia'}
+            href={'https://github.com/longzhang920909'}
           />
-          {/*<UiLink*/}
-          {/*  icon={<InstagramIcon />}*/}
-          {/*  label={'Instagram'}*/}
-          {/*  href={'https://www.instagram.com/coremilia'}*/}
-          {/*/>*/}
         </Box>
         <NavigationTabs
           currentValue={currentTab}

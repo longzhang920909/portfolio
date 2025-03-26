@@ -21,14 +21,9 @@ const Contact: FC = () => {
         </Text>
         <StyledContactLinks>
           <UiLink
-            href={'https://github.com/isemilia'}
-            label={'isemilia'}
+            href={'https://github.com/longzhang920909'}
+            label={'longzhang920909'}
             icon={<GithubIcon />}
-            target={'_blank'}
-          />
-          <UiLink
-            href={'https://bsky.app/profile/emiliasonder.bsky.social'}
-            label={'emiliasonder.bsky.social'}
             target={'_blank'}
           />
         </StyledContactLinks>
@@ -39,8 +34,8 @@ const Contact: FC = () => {
         </Text>
         <StyledContactLinks>
           <UiLink
-            href={'mailto:emiliaoffice@yandex.com'}
-            label={'emiliaoffice@yandex.com'}
+            href={'mailto:long19920909@gmail.com'}
+            label={'long19920909@gmail.com'}
             icon={<EmailIcon />}
           />
         </StyledContactLinks>

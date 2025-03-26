@@ -15,5 +15,4 @@ export interface TProjectProps {
   href: string;
   description: ReactNode;
   chips: TProjectChipProps[];
-  links: TProjectLink[];
 }

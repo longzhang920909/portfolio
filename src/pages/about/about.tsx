@@ -16,22 +16,18 @@ const About: FC = () => {
       </Text>
       <Text>
         <p>
-          I’m a front-end developer with over three years of experience building user-friendly,
-          scalable applications with <Mark>TypeScript</Mark>, <Mark>React</Mark>, and <Mark>Next.js</Mark>.
-          I enjoy crafting intuitive interfaces, optimizing performance,
-          and designing efficient system architectures.
+          Able to work with amazing speed and accuracy.
         </p>
 
         <p>
-          I’ve worked on CRM and HRM platforms, <Mark>UI libraries</Mark>, and business tools,
-          integrating <Mark>REST API</Mark>, <Mark>GraphQL</Mark>, and real-time updates.
-          While front-end development is my focus,
-          I also explore back-end technologies like Node.js, Express,
-          and databases to gain a deeper understanding of the overall development process.
+          Advanced FullStack deveoper capable of various kinds of frameworks and blockchain contracts
         </p>
 
         <p>
-          Always open to exciting projects and new challenges!
+          Fluent in web & blockchain development fields along with high qualified codes.
+        </p>
+        <p>
+          My major covers <Mark>Web Technologies</Mark> and <Mark>Blockchain</Mark> fields.
         </p>
       </Text>
       <Cta sx={() => ({ marginTop: '30px' })} />

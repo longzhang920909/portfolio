@@ -1,203 +1,81 @@
 import { TProjectProps } from '../../../components/project/assets/project.model.ts';
 
-const useProjectData: () => (TProjectProps & {
-  categories: string[];
-})[] = () => {
+const useProjectData: () => (TProjectProps)[] = () => {
   return [
     {
-      img: '/projects/taskhub.png',
-      title: '"TaskHub" - Task Management',
+      img: '/projects/coinzix.png',
+      title: '"COINZIX" - ',
       description:
-        'Minimalist task manager, my first full-stack project. Powered by React and MUI on the front end, and NodeJS on the back end.',
-      href: 'https://tasks-isemilia.vercel.app/',
+        'COINZIX is a world-class cryptocurrency exchange platform accessible to everyone with an integrated ATM network. Simple. Safe. Reliable. We make crypto easy.',
+      href: 'https://defi.coinzix.com',
       chips: [
-        { children: 'Desktop only', color: 'primary' },
+        { children: 'Full Responsive', color: 'primary' },
         { children: 'React', color: 'secondary' },
-        { children: 'Redux', color: 'secondary' },
-        { children: 'RTK Query', color: 'secondary' },
-        { children: 'TypeScript', color: 'secondary' },
-        { children: 'MUI', color: 'secondary' },
-        { children: 'SCSS', color: 'secondary' },
-        { children: 'NodeJS', color: 'secondary' },
-        { children: 'Express', color: 'secondary' },
+        { children: 'Node', color: 'secondary' },
         { children: 'MongoDB', color: 'secondary' },
-      ],
-      links: [
-        {
-          label: 'Source',
-          type: 'source',
-          href: 'https://github.com/isemilia/task-management',
-        },
-        {
-          label: 'Docs',
-          type: 'docs',
-          href: 'https://isemilia.notion.site/Task-Management-Dev-Docs-b4e7911988a743bbb4e2bb562c97e2c3?pvs=4',
-        },
-        {
-          label: 'Back end',
-          type: 'default',
-          href: 'https://github.com/isemilia/task-management-backend',
-        },
-      ],
-      categories: ['spa', 'back-end'],
+        { children: 'Weeb3.js', color: 'secondary' },
+        { children: 'Rust', color: 'secondary' },
+      ]
     },
     {
-      img: '/projects/fast-pace.png',
-      title: '"Fast Pace" - Sneaker Store',
+      img: '/projects/casino.png',
+      title: '"CasinoGame" - ',
       description:
-        'ReactJS store with order placement, catalog browsing, and color/price filtering.',
-      href: 'https://fast-pace.vercel.app/',
+        'This game is made for fum only! It is just a game and no real money is involved. What is the purpost of this? To enjoy games from a casino while playing for fake points.',
+      href: 'https://casino-game-list.onrender.com/',
       chips: [
-        { children: 'Responsive', color: 'primary' },
-        { children: 'React', color: 'secondary' },
-        { children: 'JavaScript', color: 'secondary' },
+        { children: 'Full Responsive', color: 'primary' },
+        { children: 'Vue.js', color: 'secondary' },
+        { children: 'TailwindCSS', color: 'secondary' },
+        { children: 'MongoDB', color: 'secondary' },
+        { children: 'Cloudflare', color: 'secondary' },
         { children: 'Redux', color: 'secondary' },
-        { children: 'CSS', color: 'secondary' },
-        { children: 'SCSS', color: 'secondary' },
-      ],
-      links: [
-        {
-          label: 'Source',
-          type: 'source',
-          href: 'https://github.com/isemilia/fast-pace-app',
-        },
-      ],
-      categories: ['spa'],
+      ]
     },
     {
-      img: '/projects/weather.png',
-      title: 'Weather App',
+      img: '/projects/hunterdoge.png',
+      title: '"Hunterdoge" - ',
       description:
-        'Web-based weather app that displays information about any city.',
-      href: 'https://weather-app-by-emilia.vercel.app/',
+        'Hunterdoge is a voting site for the tokens. You can vote the most popular tokens.',
+      href: 'https://hunterdoge.onrender.com/',
       chips: [
-        { children: 'Responsive', color: 'primary' },
+        { children: 'Full Responsive', color: 'primary' },
         { children: 'React', color: 'secondary' },
-        { children: 'JavaScript', color: 'secondary' },
-        { children: 'CSS', color: 'secondary' },
-        { children: 'SCSS', color: 'secondary' },
-        { children: 'OpenWeather API', color: 'secondary' },
-      ],
-      links: [
-        {
-          label: 'Source',
-          type: 'source',
-          href: 'https://github.com/isemilia/weather-react',
-        },
-      ],
-      categories: ['spa'],
+        { children: 'Emotion', color: 'secondary' },
+        { children: 'PostgreSQL', color: 'secondary' },
+        { children: 'Solidity', color: 'secondary' },
+        { children: 'web3.js', color: 'secondary' },
+      ]
     },
     {
-      img: '/projects/stopwatch.png',
-      title: 'Stopwatch & Notes',
+      img: '/projects/kandyland.png',
+      title: '"Kindyland" - ',
       description:
-        'Web-based stopwatch with note-taking feature and local storage for data persistence. One of my oldest projects.',
-      href: 'https://isemilia.github.io/stopwatch/dist/',
-      categories: ['plain'],
+        'Kindyland is a typical mint site.',
+      href: 'https://kandyland-wupv.onrender.com/',
       chips: [
-        { children: 'Responsive', color: 'primary' },
-        { children: 'HTML', color: 'secondary' },
-        { children: 'CSS', color: 'secondary' },
-        { children: 'SCSS', color: 'secondary' },
-        { children: 'JavaScript', color: 'secondary' },
-      ],
-      links: [
-        {
-          label: 'Source',
-          type: 'source',
-          href: 'https://github.com/isemilia/stopwatch',
-        },
-      ],
+        { children: 'Full Responsive', color: 'primary' },
+        { children: 'React', color: 'secondary' },
+        { children: 'MUI', color: 'secondary' },
+        { children: 'PWA', color: 'secondary' },
+        { children: 'Ethers', color: 'secondary' },
+        { children: 'StyledComponents', color: 'secondary' },
+      ]
     },
     {
-      img: '/projects/date-countdown.png',
-      title: 'Date Countdown',
+      img: '/projects/lumos.png',
+      title: '"Lumos" - ',
       description:
-        'Web-based date countdown tool with persistent data on refresh. One of my earliest JS apps.',
-      href: 'https://isemilia.github.io/date-calculator/app',
-      categories: ['plain'],
+        'Lumos is a P2P trading site for Solana.',
+      href: 'https://solana-transaction-rumos.onrender.com/',
       chips: [
-        { children: 'Responsive', color: 'primary' },
-        { children: 'HTML', color: 'secondary' },
-        { children: 'CSS', color: 'secondary' },
-        { children: 'SCSS', color: 'secondary' },
-        { children: 'JavaScript', color: 'secondary' },
-      ],
-      links: [
-        {
-          label: 'Source',
-          type: 'source',
-          href: 'https://github.com/isemilia/date-calculator',
-        },
-      ],
-    },
-    {
-      img: '/projects/portfolio-v3.png',
-      title: 'Portfolio v3 (2023)',
-      description: 'Third version of my personal portfolio website.',
-      href: 'https://emilia.alwaysdata.net/',
-      categories: ['static'],
-      chips: [
-        { children: 'Responsive', color: 'primary' },
-        { children: 'HTML', color: 'secondary' },
-        { children: 'CSS', color: 'secondary' },
-        { children: 'SCSS', color: 'secondary' },
-        { children: 'JavaScript', color: 'secondary' },
-        { children: 'PHP', color: 'secondary' },
-        { children: 'EmailJS', color: 'secondary' },
-      ],
-      links: [
-        // {
-        //   label: 'Source',
-        //   type: 'source',
-        //   href: 'https://github.com/isemilia/portfolio-v3',
-        // },
-      ],
-    },
-    {
-      img: '/projects/portfolio-v2.png',
-      title: 'Portfolio v2 (2022)',
-      description: 'Second iteration of my portfolio.',
-      href: 'https://isemilia.github.io/portfolio-v2/',
-      categories: ['static'],
-      chips: [
-        { children: 'Responsive', color: 'primary' },
-        { children: 'HTML', color: 'secondary' },
-        { children: 'CSS', color: 'secondary' },
-        { children: 'SCSS', color: 'secondary' },
-        { children: 'JavaScript', color: 'secondary' },
-      ],
-      links: [
-        {
-          label: 'Source',
-          type: 'source',
-          href: 'https://github.com/isemilia/portfolio-v2',
-        },
-      ],
-    },
-    {
-      img: '/projects/openbiz.png',
-      title: 'Openbiz',
-      description:
-        'Landing page for a service for non-residents of Kazakhstan.',
-      href: 'https://isemilia.github.io/openbiz/dist',
-      categories: ['static'],
-      chips: [
-        { children: 'Responsive', color: 'primary' },
-        { children: 'HTML', color: 'secondary' },
-        { children: 'CSS', color: 'secondary' },
-        { children: 'SCSS', color: 'secondary' },
-        { children: 'JavaScript', color: 'secondary' },
-        { children: 'PHP', color: 'secondary' },
-        { children: 'WordPress', color: 'secondary' },
-      ],
-      links: [
-        {
-          label: 'Source',
-          type: 'source',
-          href: 'https://github.com/isemilia/openbiz',
-        },
-      ],
+        { children: 'Full Responsive', color: 'primary' },
+        { children: 'React', color: 'secondary' },
+        { children: 'Node', color: 'secondary' },
+        { children: 'PostgreSQL', color: 'secondary' },
+        { children: 'Weeb3.js', color: 'secondary' },
+        { children: 'Solidity', color: 'secondary' },
+      ]
     },
   ];
 };

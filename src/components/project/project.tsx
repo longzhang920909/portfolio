@@ -44,19 +44,6 @@ const Project: FC<TProjectProps> = ({
             </ProjectChip>
           ))}
         </StyledProjectChips>
-        <StyledProjectLinks>
-          {links.map((link, i) => (
-            <UiLink
-              key={i}
-              label={link.label}
-              href={link.href}
-              icon={getLinkIcon(link.type)}
-              size={'small'}
-              iconPosition={'right'}
-              target={'_blank'}
-            />
-          ))}
-        </StyledProjectLinks>
       </Box>
     </StyledProjectWrap>
   );
