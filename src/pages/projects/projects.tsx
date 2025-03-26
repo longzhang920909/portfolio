@@ -1,5 +1,4 @@
-import { FC, useState } from 'react';
-import Filter from '../../components/filter';
+import { FC } from 'react';
 import Project from '../../components/project';
 import Container from '../../ui/container';
 import { StyledProjectList } from './assets/projects.styles.ts';

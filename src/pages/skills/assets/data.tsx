@@ -6,7 +6,6 @@ import JavascriptIcon from '../../../ui/icons/javascript-icon';
 import JiraIcon from '../../../ui/icons/jira-icon';
 import MongodbIcon from '../../../ui/icons/mongodb-icon';
 import MuiIcon from '../../../ui/icons/mui-icon';
-import NodejsIcon from '../../../ui/icons/nodejs-icon';
 import PixsoIcon from '../../../ui/icons/pixso-icon';
 import ReactIcon from '../../../ui/icons/react-icon';
 import ReduxIcon from '../../../ui/icons/redux-icon';
